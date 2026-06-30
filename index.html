@@ -34,7 +34,7 @@ body{background:#060d18;color:#dde6f4;font-family:'IBM Plex Sans',system-ui,sans
   --amb:#f59e0b;--agl:rgba(245,158,11,.09);
   --pur:#8b5cf6;--pgl:rgba(139,92,246,.09);
   --red:#ef4444;
-  --txt:#dde6f4;--sub:#8aa4c0;--dim:#3d5270;
+  --txt:#dde6f4;--sub:#8aa4c0;--dim:#6680a3;
   --nav:60px;--max:1100px;--r:6px;
   --mono:'IBM Plex Mono',monospace;
 }
@@ -363,6 +363,7 @@ footer{border-top:1px solid var(--b0);padding:22px 0}
   .tmpl-tab{font-size:.64rem;padding:5px 10px}
 }
 .chart-inset{margin:16px 0;background:var(--bg1);border:1px solid var(--b0);border-radius:var(--r);padding:14px 16px}
+.chart-inset .ch-wrap{position:relative;width:100%;height:160px}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Person","name":"Kaylee Gassen","jobTitle":"Program Manager","description":"Program Manager with 5+ years in healthcare operations and 4+ years in direct program management. Six Sigma Black Belt. Process improvement, KPI reporting, cross-functional team leadership, staff training, and compliance management.","url":"https://kaylee-gassen.github.io/project.portfolio.github.io/","email":"kayleegassen@gmail.com","telephone":"+17206333302","address":{"@type":"PostalAddress","addressLocality":"Denver","addressRegion":"CO","addressCountry":"US"},"sameAs":["https://linkedin.com/in/kaylee-gassen"],"knowsAbout":["Monday.com","Project Management","Program Management","Healthcare Operations","Six Sigma","Process Improvement","KPI Reporting","Power BI","Staff Training","Curriculum Development","Compliance Management","EMR/EHR Systems","Recruiting Operations"],"hasCredential":[{"@type":"EducationalOccupationalCredential","name":"Six Sigma Black Belt","credentialCategory":"Professional Certification","recognizedBy":{"@type":"Organization","name":"AIGPE"}},{"@type":"EducationalOccupationalCredential","name":"Certified Recreational Therapist","credentialCategory":"Professional Certification","recognizedBy":{"@type":"Organization","name":"NCTRC"}}]}
@@ -451,7 +452,7 @@ footer{border-top:1px solid var(--b0);padding:22px 0}
         <div class="csout"><div class="oi">✓</div><div><div class="olbl">Outcome</div><div class="otxt">Client satisfaction rose from 47% to 86% in eight months. Admissions grew 15%, scheduling conflicts dropped from 28% to 13%, weekly reporting time cut from 3–4 hours to under 30 minutes, and the rec therapy team was fully independent within 6 months of launch.</div></div></div>
         <div class="chart-inset">
           <div style="font-size:.68rem;font-weight:600;color:var(--sub);text-transform:uppercase;letter-spacing:.08em;margin-bottom:10px">Client Satisfaction Trend — 8 Month Arc</div>
-          <canvas id="chartImpact" height="80"></canvas>
+          <div class="ch-wrap"><canvas id="chartImpact"></canvas></div>
         </div>
         <div class="csmets">
           <div class="csm"><div class="csmn">47→86%</div><div class="csmlb">Client satisfaction</div></div>
@@ -625,13 +626,13 @@ footer{border-top:1px solid var(--b0);padding:22px 0}
     <div class="f"><span class="lbl">Projects &amp; Tools Built</span><h2>Tools built for real programs.</h2><div class="rule"></div>
       <p style="font-size:.84rem;color:var(--sub);max-width:620px;margin-bottom:28px">Each one started as a real operational problem. Click a tab to try them.</p>
     </div>
-    <div class="tool-tabs f">
-      <button class="ttab active" data-tab="dash" onclick="switchTab('dash')">Analytics Dashboard</button>
-      <button class="ttab" data-tab="dmaic" onclick="switchTab('dmaic')">DMAIC Case Study</button>
-      <button class="ttab" data-tab="notes" onclick="switchTab('notes')">Notes Formatter</button>
-      <button class="ttab" data-tab="tmpl" onclick="switchTab('tmpl')">PM Templates</button>
-      <button class="ttab" data-tab="staff" onclick="switchTab('staff')">Staff Training Tracker</button>
-      <button class="ttab" data-tab="gantt" onclick="switchTab('gantt')">Program Status Report</button>
+    <div class="tool-tabs f" role="tablist">
+      <button class="ttab active" data-tab="dash" onclick="switchTab('dash')" role="tab" aria-selected="true">Analytics Dashboard</button>
+      <button class="ttab" data-tab="dmaic" onclick="switchTab('dmaic')" role="tab" aria-selected="false">DMAIC Case Study</button>
+      <button class="ttab" data-tab="notes" onclick="switchTab('notes')" role="tab" aria-selected="false">Notes Formatter</button>
+      <button class="ttab" data-tab="tmpl" onclick="switchTab('tmpl')" role="tab" aria-selected="false">PM Templates</button>
+      <button class="ttab" data-tab="staff" onclick="switchTab('staff')" role="tab" aria-selected="false">Staff Training Tracker</button>
+      <button class="ttab" data-tab="gantt" onclick="switchTab('gantt')" role="tab" aria-selected="false">Program Status Report</button>
     </div>
 
     <!-- ANALYTICS DASHBOARD -->
@@ -676,11 +677,11 @@ footer{border-top:1px solid var(--b0);padding:22px 0}
     <!-- DMAIC -->
     <div class="tpanel" id="tab-dmaic">
       <div class="d-phases">
-        <div class="d-phase" id="ph-D" style="background:#1e3a5f;border-color:#3b82f6" onclick="switchPhase('D')"><div class="dph-l" style="color:#3b82f6">D</div><div class="dph-n" style="color:#3b82f6">Define</div></div>
-        <div class="d-phase" id="ph-M" onclick="switchPhase('M')"><div class="dph-l" style="color:var(--dim)">M</div><div class="dph-n" style="color:var(--dim)">Measure</div></div>
-        <div class="d-phase" id="ph-A" onclick="switchPhase('A')"><div class="dph-l" style="color:var(--dim)">A</div><div class="dph-n" style="color:var(--dim)">Analyze</div></div>
-        <div class="d-phase" id="ph-I" onclick="switchPhase('I')"><div class="dph-l" style="color:var(--dim)">I</div><div class="dph-n" style="color:var(--dim)">Improve</div></div>
-        <div class="d-phase" id="ph-C" onclick="switchPhase('C')"><div class="dph-l" style="color:var(--dim)">C</div><div class="dph-n" style="color:var(--dim)">Control</div></div>
+        <div class="d-phase" id="ph-D" style="background:#1e3a5f;border-color:#3b82f6" onclick="switchPhase('D')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();switchPhase('D')}" role="button" tabindex="0"><div class="dph-l" style="color:#3b82f6">D</div><div class="dph-n" style="color:#3b82f6">Define</div></div>
+        <div class="d-phase" id="ph-M" onclick="switchPhase('M')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();switchPhase('M')}" role="button" tabindex="0"><div class="dph-l" style="color:var(--dim)">M</div><div class="dph-n" style="color:var(--dim)">Measure</div></div>
+        <div class="d-phase" id="ph-A" onclick="switchPhase('A')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();switchPhase('A')}" role="button" tabindex="0"><div class="dph-l" style="color:var(--dim)">A</div><div class="dph-n" style="color:var(--dim)">Analyze</div></div>
+        <div class="d-phase" id="ph-I" onclick="switchPhase('I')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();switchPhase('I')}" role="button" tabindex="0"><div class="dph-l" style="color:var(--dim)">I</div><div class="dph-n" style="color:var(--dim)">Improve</div></div>
+        <div class="d-phase" id="ph-C" onclick="switchPhase('C')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();switchPhase('C')}" role="button" tabindex="0"><div class="dph-l" style="color:var(--dim)">C</div><div class="dph-n" style="color:var(--dim)">Control</div></div>
       </div>
       <div class="d-content on" id="dc-D">
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px">
@@ -997,23 +998,23 @@ footer{border-top:1px solid var(--b0);padding:22px 0}
           <div class="psr-status-row">
             <div class="psr-status-item">
               <div class="psr-status-lbl">Schedule</div>
-              <div class="psr-status-pill psr-green" onclick="cycleStatus(this)">ON TRACK</div>
+              <div class="psr-status-pill psr-green" onclick="cycleStatus(this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();cycleStatus(this)}" role="button" tabindex="0">ON TRACK</div>
             </div>
             <div class="psr-status-item">
               <div class="psr-status-lbl">Compliance</div>
-              <div class="psr-status-pill psr-green" onclick="cycleStatus(this)">ON TRACK</div>
+              <div class="psr-status-pill psr-green" onclick="cycleStatus(this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();cycleStatus(this)}" role="button" tabindex="0">ON TRACK</div>
             </div>
             <div class="psr-status-item">
               <div class="psr-status-lbl">Staffing</div>
-              <div class="psr-status-pill psr-yellow" onclick="cycleStatus(this)">AT RISK</div>
+              <div class="psr-status-pill psr-yellow" onclick="cycleStatus(this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();cycleStatus(this)}" role="button" tabindex="0">AT RISK</div>
             </div>
             <div class="psr-status-item">
               <div class="psr-status-lbl">Budget</div>
-              <div class="psr-status-pill psr-green" onclick="cycleStatus(this)">ON TRACK</div>
+              <div class="psr-status-pill psr-green" onclick="cycleStatus(this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();cycleStatus(this)}" role="button" tabindex="0">ON TRACK</div>
             </div>
             <div class="psr-status-item">
               <div class="psr-status-lbl">Client Outcomes</div>
-              <div class="psr-status-pill psr-green" onclick="cycleStatus(this)">ON TRACK</div>
+              <div class="psr-status-pill psr-green" onclick="cycleStatus(this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();cycleStatus(this)}" role="button" tabindex="0">ON TRACK</div>
             </div>
           </div>
           <div class="psr-status-hint">Click any status to cycle: ON TRACK → AT RISK → OFF TRACK → ON TRACK</div>
@@ -1063,14 +1064,14 @@ footer{border-top:1px solid var(--b0);padding:22px 0}
             <div class="psr-list" id="psr-risks">
               <div class="psr-risk-item">
                 <div class="psr-risk-top">
-                  <div class="psr-risk-pill psr-yellow-bg" onclick="cycleRisk(this)">MEDIUM</div>
+                  <div class="psr-risk-pill psr-yellow-bg" onclick="cycleRisk(this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();cycleRisk(this)}" role="button" tabindex="0">MEDIUM</div>
                   <div contenteditable="true" class="psr-risk-title">Staff coverage gap — one counselor on PTO next week</div>
                 </div>
                 <div class="psr-risk-action" contenteditable="true">Mitigation: coverage schedule confirmed, float staff requested</div>
               </div>
               <div class="psr-risk-item">
                 <div class="psr-risk-top">
-                  <div class="psr-risk-pill psr-red-bg" onclick="cycleRisk(this)">HIGH</div>
+                  <div class="psr-risk-pill psr-red-bg" onclick="cycleRisk(this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();cycleRisk(this)}" role="button" tabindex="0">HIGH</div>
                   <div contenteditable="true" class="psr-risk-title">One client Medicaid renewal overdue — 10-day window</div>
                 </div>
                 <div class="psr-risk-action" contenteditable="true">Mitigation: caseworker notified, paperwork in progress, tracking daily</div>
@@ -1108,7 +1109,7 @@ footer{border-top:1px solid var(--b0);padding:22px 0}
         .psr-header{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:20px}
         .psr-hcol{background:var(--bg1);border:1px solid var(--b0);border-radius:var(--r);padding:12px 14px}
         .psr-hlbl{font-size:.66rem;color:var(--sub);text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px}
-        .psr-hval{font-size:.82rem;color:var(--txt);font-weight:500;outline:none;min-height:18px}
+        .psr-hval{font-size:.82rem;color:var(--txt);font-weight:500;outline:none;min-height:18px;word-break:break-word}
         .psr-hval:focus{color:var(--blue)}
         .psr-section{background:var(--bg1);border:1px solid var(--b0);border-radius:var(--r);padding:16px 18px;margin-bottom:12px}
         .psr-section-title{font-size:.68rem;font-weight:600;color:var(--sub);text-transform:uppercase;letter-spacing:.1em;margin-bottom:14px}
@@ -1123,15 +1124,15 @@ footer{border-top:1px solid var(--b0);padding:22px 0}
         .psr-status-hint{font-size:.65rem;color:var(--dim,var(--sub));margin-top:12px;text-align:center;opacity:.6}
         .psr-kpi-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
         .psr-kpi{background:var(--bg2);border-radius:var(--r);padding:14px;border:1px solid var(--b0)}
-        .psr-kpi-val{font-size:1.5rem;font-weight:700;color:var(--blue);font-family:var(--mono);outline:none;margin-bottom:4px}
+        .psr-kpi-val{font-size:1.5rem;font-weight:700;color:var(--blue);font-family:var(--mono);outline:none;margin-bottom:4px;word-break:break-word}
         .psr-kpi-val:focus{color:var(--txt)}
         .psr-kpi-lbl{font-size:.7rem;color:var(--txt);margin-bottom:6px;font-weight:500}
-        .psr-kpi-note{font-size:.66rem;color:var(--sub);outline:none;min-height:14px;line-height:1.4}
+        .psr-kpi-note{font-size:.66rem;color:var(--sub);outline:none;min-height:14px;line-height:1.4;word-break:break-word}
         .psr-kpi-note:focus{color:var(--txt)}
         .psr-two-col{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px}
         .psr-col-block{background:var(--bg1);border:1px solid var(--b0);border-radius:var(--r);padding:16px 18px}
         .psr-list{display:flex;flex-direction:column;gap:6px;margin-bottom:10px}
-        .psr-list-item{font-size:.78rem;color:var(--txt);padding:8px 10px 8px 26px;position:relative;outline:none;border-radius:4px;line-height:1.5;min-height:16px}
+        .psr-list-item{font-size:.78rem;color:var(--txt);padding:8px 10px 8px 26px;position:relative;outline:none;border-radius:4px;line-height:1.5;min-height:16px;word-break:break-word}
         .psr-list-item:focus{background:var(--bg2)}
         .psr-list-item::before{content:"•";position:absolute;left:10px;color:var(--blue);font-size:.9rem;top:7px}
         .psr-risk-item{background:var(--bg2);border-radius:var(--r);padding:10px 12px;margin-bottom:8px;border:1px solid var(--b0)}
@@ -1140,11 +1141,11 @@ footer{border-top:1px solid var(--b0);padding:22px 0}
         .psr-yellow-bg{background:rgba(245,158,11,.15);color:#f59e0b;border:1px solid rgba(245,158,11,.25)}
         .psr-red-bg{background:rgba(239,68,68,.12);color:#ef4444;border:1px solid rgba(239,68,68,.25)}
         .psr-green-bg{background:rgba(16,185,129,.12);color:#10b981;border:1px solid rgba(16,185,129,.25)}
-        .psr-risk-title{font-size:.78rem;color:var(--txt);outline:none;flex:1;line-height:1.4}
+        .psr-risk-title{font-size:.78rem;color:var(--txt);outline:none;flex:1;line-height:1.4;word-break:break-word}
         .psr-risk-title:focus{background:transparent}
-        .psr-risk-action{font-size:.71rem;color:var(--sub);outline:none;padding-left:2px;line-height:1.4}
+        .psr-risk-action{font-size:.71rem;color:var(--sub);outline:none;padding-left:2px;line-height:1.4;word-break:break-word}
         .psr-risk-action:focus{color:var(--txt)}
-        .psr-notes{font-size:.78rem;color:var(--txt);outline:none;min-height:60px;line-height:1.6;padding:4px 2px}
+        .psr-notes{font-size:.78rem;color:var(--txt);outline:none;min-height:60px;line-height:1.6;padding:4px 2px;word-break:break-word}
         .psr-notes:focus{color:var(--txt)}
         .psr-notes:empty::before{content:attr(placeholder);color:var(--sub);pointer-events:none;display:block}
         .psr-add-btn{background:none;border:1px dashed var(--b1);color:var(--sub);font-size:.7rem;padding:5px 12px;border-radius:4px;cursor:pointer;transition:all .15s;font-family:inherit}
@@ -1199,7 +1200,7 @@ footer{border-top:1px solid var(--b0);padding:22px 0}
           item.className = 'psr-risk-item';
           item.innerHTML = `
             <div class="psr-risk-top">
-              <div class="psr-risk-pill psr-yellow-bg" onclick="cycleRisk(this)">MEDIUM</div>
+              <div class="psr-risk-pill psr-yellow-bg" onclick="cycleRisk(this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();cycleRisk(this)}" role="button" tabindex="0">MEDIUM</div>
               <div contenteditable="true" class="psr-risk-title">Describe the risk...</div>
             </div>
             <div class="psr-risk-action" contenteditable="true">Mitigation: </div>`;
@@ -1210,6 +1211,7 @@ footer{border-top:1px solid var(--b0);padding:22px 0}
           const program = document.querySelector('.psr-hval').innerText;
           const week = document.querySelectorAll('.psr-hval')[1].innerText;
           const w = window.open('','_blank','width=900,height=700');
+          if(!w){alert('Your browser blocked the popup. Please allow popups for this site and try again.');return;}
           const kpis = [...document.querySelectorAll('.psr-kpi')].map(k => {
             const val = k.querySelector('.psr-kpi-val').innerText;
             const lbl = k.querySelector('.psr-kpi-lbl').innerText;
@@ -1494,9 +1496,11 @@ footer{border-top:1px solid var(--b0);padding:22px 0}
 /* ── TABS ── */
 function switchTab(name) {
   document.querySelectorAll('.tpanel').forEach(p=>p.classList.remove('active'));
-  document.querySelectorAll('.ttab').forEach(b=>b.classList.remove('active'));
+  document.querySelectorAll('.ttab').forEach(b=>{b.classList.remove('active');b.setAttribute('aria-selected','false');});
   document.getElementById('tab-'+name).classList.add('active');
-  document.querySelector(`[data-tab="${name}"]`).classList.add('active');
+  const activeBtn=document.querySelector(`[data-tab="${name}"]`);
+  activeBtn.classList.add('active');
+  activeBtn.setAttribute('aria-selected','true');
   if(name==='dash')setTimeout(initCharts,50);
 }
 /* ── DMAIC ── */
@@ -1517,6 +1521,7 @@ const G='rgba(255,255,255,0.045)',T='#3d5270';
 const base={responsive:true,maintainAspectRatio:false,animation:{duration:600},plugins:{legend:{display:false}}};
 const months=['Jan 22','Feb 22','Mar 22','Apr 22','May 22','Jun 22','Jul 22','Aug 22','Sep 22','Oct 22','Nov 22','Dec 22','Jan 23','Feb 23','Mar 23','Apr 23','May 23','Jun 23','Jul 23','Aug 23','Sep 23','Oct 23','Nov 23','Dec 23'];
 function initCharts() {
+  ['cAdm','cDonut','cTrend','cUtil','cRet','chartImpact'].forEach(id=>{const c=document.getElementById(id);if(c){const existing=Chart.getChart(c);if(existing)existing.destroy();}});
   new Chart(document.getElementById('cAdm'),{type:'bar',data:{labels:months,datasets:[
     {label:'Recovery',data:[28,29,30,29,31,32,33,31,34,33,35,36,35,37,36,38,38,39,40,39,40,41,40,40],backgroundColor:'rgba(59,130,246,.7)',borderRadius:2,borderSkipped:false},
     {label:'Youth',data:[null,null,null,null,null,null,null,null,null,null,null,null,14,15,16,17,18,19,20,20,21,22,22,23],backgroundColor:'rgba(245,158,11,.7)',borderRadius:2,borderSkipped:false}
@@ -1546,7 +1551,7 @@ function eD(s){const p=[/by\s+(Friday|Monday|Tuesday|Wednesday|Thursday)/i,/by\s
 function gP(s){const l=s.toLowerCase();if(l.includes('urgent')||l.includes('asap'))return['High','chip-h'];if(l.includes('when possible'))return['Low','chip-l'];return['Medium','chip-m'];}
 function formatNotes(){const notes=document.getElementById('nf-notes').value.trim();if(!notes){alert('Paste some notes first, or click "Load Example".');return;}const out=document.getElementById('nf-out');out.innerHTML='<div class="proc"><div class="spinner"></div><span>Formatting your notes...</span></div>';document.getElementById('nf-copy-btn').style.display='none';setTimeout(()=>{renderNF(parseNF(notes));document.getElementById('nf-copy-btn').style.display='inline-block';},900);}
 function parseNF(text){const tM=text.match(/(?:Meeting|Subject):?\s*([^\n]+)/i);const dM=text.match(/[Dd]ate:?\s*([^\n]+)/);const aM=text.match(/[Aa]ttendees?:?\s*([^\n]+)/);const title=tM?tM[1].trim():'Meeting Notes';const date=dM?dM[1].trim():new Date().toLocaleDateString();const attendees=aM?aM[1].split(/[,&]/).map(s=>s.trim()).filter(Boolean):[];const sentences=text.replace(/\n+/g,' ').split(/(?<=[.!?])\s+/).map(s=>s.trim()).filter(s=>s.length>15);const aV=['will','needs to','agreed to','should','to send','to update','to prepare','to finalize','to coordinate','to submit','to confirm'];const dW=['decided','approved','resolved','confirmed','team approved','moving forward'];const actions=[],decisions=[];sentences.forEach(s=>{if(s.match(/^(Meeting|Date|Attendees)/i))return;const l=s.toLowerCase();if(dW.some(d=>l.includes(d)))decisions.push(s);else if(aV.some(v=>l.includes(v))&&s.length>20)actions.push({text:s,owner:eO(s)||'Team',due:eD(s),priority:gP(s)});});window._nfText=`MEETING: ${title}\nDATE: ${date}\n${attendees.length?'ATTENDEES: '+attendees.join(', ')+'\n':''}\nACTION ITEMS (${actions.length}):\n${actions.map((a,i)=>`${i+1}. ${a.text}\n   Owner: ${a.owner} | Due: ${a.due} | Priority: ${a.priority[0]}`).join('\n')}${decisions.length?'\n\nDECISIONS:\n'+decisions.map((d,i)=>`${i+1}. ${d}`).join('\n'):''}`;return{title,date,attendees,actions,decisions};}
-function renderNF(r){let h=`<div class="nf-hdr"><div style="font-size:.88rem;font-weight:500;color:var(--txt);margin-bottom:3px">${r.title}</div><div style="font-size:.76rem;color:var(--dim)">${r.date}</div></div>`;if(r.attendees.length){h+=`<div class="nf-sec"><div class="nf-sch">Attendees (${r.attendees.length})</div>${r.attendees.map(a=>`<span class="nf-att">${a}</span>`).join('')}</div>`;}if(r.actions.length){h+=`<div class="nf-sec"><div class="nf-sch">Action Items (${r.actions.length})</div>`;r.actions.forEach(a=>{h+=`<div class="nf-item"><div class="nf-item-t">${a.text}</div><div class="nf-chips"><span class="chip chip-o">${a.owner}</span><span class="chip chip-d">${a.due}</span><span class="chip ${a.priority[1]}">${a.priority[0]}</span></div></div>`;});h+='</div>';}if(r.decisions.length){h+=`<div class="nf-sec"><div class="nf-sch">Decisions Made (${r.decisions.length})</div>${r.decisions.map(d=>`<div class="nf-dec">✓ ${d}</div>`).join('')}</div>`;}if(!r.actions.length&&!r.decisions.length)h+=`<div class="nf-item"><div class="nf-item-t">Notes processed. For better results: include names + "will / needs to / agreed to" for actions, and "decided / approved / confirmed" for decisions.</div></div>`;document.getElementById('nf-out').innerHTML=h;}
+function renderNF(r){let h=`<div class="nf-hdr"><div style="font-size:.88rem;font-weight:500;color:var(--txt);margin-bottom:3px">${escapeHtml(r.title)}</div><div style="font-size:.76rem;color:var(--dim)">${escapeHtml(r.date)}</div></div>`;if(r.attendees.length){h+=`<div class="nf-sec"><div class="nf-sch">Attendees (${r.attendees.length})</div>${r.attendees.map(a=>`<span class="nf-att">${escapeHtml(a)}</span>`).join('')}</div>`;}if(r.actions.length){h+=`<div class="nf-sec"><div class="nf-sch">Action Items (${r.actions.length})</div>`;r.actions.forEach(a=>{h+=`<div class="nf-item"><div class="nf-item-t">${escapeHtml(a.text)}</div><div class="nf-chips"><span class="chip chip-o">${escapeHtml(a.owner)}</span><span class="chip chip-d">${escapeHtml(a.due)}</span><span class="chip ${a.priority[1]}">${escapeHtml(a.priority[0])}</span></div></div>`;});h+='</div>';}if(r.decisions.length){h+=`<div class="nf-sec"><div class="nf-sch">Decisions Made (${r.decisions.length})</div>${r.decisions.map(d=>`<div class="nf-dec">✓ ${escapeHtml(d)}</div>`).join('')}</div>`;}if(!r.actions.length&&!r.decisions.length)h+=`<div class="nf-item"><div class="nf-item-t">Notes processed. For better results: include names + "will / needs to / agreed to" for actions, and "decided / approved / confirmed" for decisions.</div></div>`;document.getElementById('nf-out').innerHTML=h;}
 function copyNFOut(){if(!window._nfText)return;navigator.clipboard.writeText(window._nfText).then(()=>{const b=document.getElementById('nf-copy-btn');b.textContent='Copied!';setTimeout(()=>b.textContent='Copy All',2000);});}
 
 /* ── TEMPLATE SUB-TABS ── */
@@ -1556,7 +1561,7 @@ function switchTmpl(name,el){document.querySelectorAll('.tmpl-panel').forEach(p=
 function calcScore(cell){const row=cell.closest('tr');const tds=[...row.querySelectorAll('td')];if(tds.length<7)return;const lv=parseInt(tds[3].textContent)||0;const iv=parseInt(tds[4].textContent)||0;const score=lv*iv;tds[5].textContent=score||'—';tds[5].className='sh-score '+(score>=10?'sc-high':score>=5?'sc-med':score>0?'sc-low':'');if(score>=10){tds[6].className='risk-H';tds[6].textContent='HIGH';}else if(score>=5){tds[6].className='risk-M';tds[6].textContent='MEDIUM';}else if(score>0){tds[6].className='risk-L';tds[6].textContent='LOW';}else{tds[6].className='shv';tds[6].textContent='';}}
 
 /* ── PRINT ── */
-function printTmpl(id,title){const el=document.getElementById('sheet-'+id);if(!el)return;const w=window.open('','_blank','width=900,height=700');w.document.write(`<!DOCTYPE html><html><head><title>${title} — Kaylee Gassen</title><style>body{font-family:'Segoe UI',sans-serif;font-size:11px;color:#1e293b;padding:20px;background:#fff}table{width:100%;border-collapse:collapse}th{background:#1e3a5f;color:#fff;font-size:10px;font-weight:600;padding:7px 10px;text-align:left;border:1px solid #254570;letter-spacing:.06em;text-transform:uppercase}td{border:1px solid #e2e8f0;padding:0;vertical-align:top}.shl{background:#f1f5f9;color:#475569;font-size:10px;font-weight:500;padding:7px 10px;white-space:nowrap}.shv{padding:7px 10px;color:#1e293b;min-height:28px;line-height:1.5}.sh-section{background:#254570;color:#93c5fd;font-size:9px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;padding:6px 10px}.sh-R{background:#dbeafe;color:#1d4ed8;font-weight:700;text-align:center;padding:7px}.sh-A{background:#ede9fe;color:#6d28d9;font-weight:700;text-align:center;padding:7px}.sh-C{background:#d1fae5;color:#065f46;font-weight:700;text-align:center;padding:7px}.sh-I{background:#fef3c7;color:#92400e;font-weight:700;text-align:center;padding:7px}.sh-center{text-align:center;padding:7px}.risk-H{background:#fee2e2;color:#b91c1c;font-weight:700;text-align:center;padding:7px}.risk-M{background:#fef3c7;color:#b45309;font-weight:700;text-align:center;padding:7px}.risk-L{background:#d1fae5;color:#065f46;font-weight:700;text-align:center;padding:7px}.sh-score{font-weight:700;text-align:center;padding:7px}.sc-high{color:#b91c1c}.sc-med{color:#b45309}.sc-low{color:#065f46}.kpi-cat{background:#e2e8f0;color:#1e293b;font-weight:600;padding:7px 10px}.kpi-on{background:#d1fae5;color:#065f46;font-weight:600;text-align:center;padding:7px}.kpi-warn{background:#fef3c7;color:#92400e;font-weight:600;text-align:center;padding:7px}.phase-hdr{color:#fff;font-weight:600;padding:8px 10px}h1{font-size:16px;color:#1e3a5f;margin-bottom:4px}.sub{font-size:10px;color:#64748b;margin-bottom:16px}</style></head><body><h1>${title}</h1><div class="sub">Kaylee Gassen · Program Manager · kayleegassen@gmail.com · Denver, CO</div>${el.innerHTML}<script>window.onload=function(){window.print()}<\/script></body></html>`);w.document.close();}
+function printTmpl(id,title){const el=document.getElementById('sheet-'+id);if(!el)return;const w=window.open('','_blank','width=900,height=700');if(!w){alert('Your browser blocked the popup. Please allow popups for this site and try again.');return;}w.document.write(`<!DOCTYPE html><html><head><title>${title} — Kaylee Gassen</title><style>body{font-family:'Segoe UI',sans-serif;font-size:11px;color:#1e293b;padding:20px;background:#fff}table{width:100%;border-collapse:collapse}th{background:#1e3a5f;color:#fff;font-size:10px;font-weight:600;padding:7px 10px;text-align:left;border:1px solid #254570;letter-spacing:.06em;text-transform:uppercase}td{border:1px solid #e2e8f0;padding:0;vertical-align:top}.shl{background:#f1f5f9;color:#475569;font-size:10px;font-weight:500;padding:7px 10px;white-space:nowrap}.shv{padding:7px 10px;color:#1e293b;min-height:28px;line-height:1.5}.sh-section{background:#254570;color:#93c5fd;font-size:9px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;padding:6px 10px}.sh-R{background:#dbeafe;color:#1d4ed8;font-weight:700;text-align:center;padding:7px}.sh-A{background:#ede9fe;color:#6d28d9;font-weight:700;text-align:center;padding:7px}.sh-C{background:#d1fae5;color:#065f46;font-weight:700;text-align:center;padding:7px}.sh-I{background:#fef3c7;color:#92400e;font-weight:700;text-align:center;padding:7px}.sh-center{text-align:center;padding:7px}.risk-H{background:#fee2e2;color:#b91c1c;font-weight:700;text-align:center;padding:7px}.risk-M{background:#fef3c7;color:#b45309;font-weight:700;text-align:center;padding:7px}.risk-L{background:#d1fae5;color:#065f46;font-weight:700;text-align:center;padding:7px}.sh-score{font-weight:700;text-align:center;padding:7px}.sc-high{color:#b91c1c}.sc-med{color:#b45309}.sc-low{color:#065f46}.kpi-cat{background:#e2e8f0;color:#1e293b;font-weight:600;padding:7px 10px}.kpi-on{background:#d1fae5;color:#065f46;font-weight:600;text-align:center;padding:7px}.kpi-warn{background:#fef3c7;color:#92400e;font-weight:600;text-align:center;padding:7px}.phase-hdr{color:#fff;font-weight:600;padding:8px 10px}h1{font-size:16px;color:#1e3a5f;margin-bottom:4px}.sub{font-size:10px;color:#64748b;margin-bottom:16px}</style></head><body><h1>${title}</h1><div class="sub">Kaylee Gassen · Program Manager · kayleegassen@gmail.com · Denver, CO</div>${el.innerHTML}<script>window.onload=function(){window.print()}<\/script></body></html>`);w.document.close();}
 
 /* ── STAFF TRAINING & SUPERVISION TRACKER ── */
 const MODULES = [
@@ -1565,6 +1570,11 @@ const MODULES = [
 ];
 let staffRoster = [];
 
+function escapeHtml(str){
+  const d = document.createElement('div');
+  d.textContent = str;
+  return d.innerHTML;
+}
 function addStaffMember(){
   const name = document.getElementById('sf-name').value.trim();
   const role = document.getElementById('sf-role').value.trim();
@@ -1661,8 +1671,8 @@ function renderRoster(){
     return `<div style="background:var(--bg0);border:1px solid var(--b0);border-radius:var(--r);overflow:hidden">
       <div style="padding:14px 18px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;border-bottom:1px solid var(--b0)">
         <div>
-          <div style="font-size:.9rem;font-weight:600">${member.name}</div>
-          <div style="font-size:.72rem;color:var(--sub)">${member.role} · Started ${member.start}</div>
+          <div style="font-size:.9rem;font-weight:600">${escapeHtml(member.name)}</div>
+          <div style="font-size:.72rem;color:var(--sub)">${escapeHtml(member.role)} · Started ${member.start}</div>
         </div>
         <div style="display:flex;align-items:center;gap:10px">
           ${statusLabel}
@@ -1706,6 +1716,7 @@ function exportStaffPDF(){
     </div>`;
   }).join('<hr style="margin:24px 0">');
   const w=window.open('','_blank');
+  if(!w){alert('Your browser blocked the popup. Please allow popups for this site and try again.');return;}
   w.document.write(`<!DOCTYPE html><html><head><title>Staff Training Report</title><style>body{font-family:-apple-system,sans-serif;max-width:900px;margin:40px auto;padding:0 20px;color:#111}h1{font-size:18px;margin-bottom:4px}@media print{.no-print{display:none}}</style></head><body>
     <div class="no-print" style="margin-bottom:20px"><button onclick="window.print()" style="padding:8px 18px;background:#3b82f6;color:#fff;border:none;border-radius:6px;cursor:pointer;font-size:13px">Print / Save as PDF</button></div>
     <h1>Staff Training &amp; Supervision Report</h1>
