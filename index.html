@@ -3,18 +3,21 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
 <title>Kaylee Gassen — Program Manager | Healthcare Operations</title>
-<meta name="description" content="Program Manager with 5+ years in healthcare operations. Six Sigma Black Belt. Zero compliance findings. KPI Reporting, Process Improvement, Power BI.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='12' fill='%23060d18'/><text y='68' x='50' text-anchor='middle' font-size='52' font-family='system-ui' font-weight='700' fill='%233b82f6'>K</text></svg>">
+<meta name="description" content="Program Manager with 5+ years building operational systems — Six Sigma Black Belt, Power BI, Monday.com, PMP in progress. Proven outcomes: 47%→86% satisfaction, +15% admissions, 100% compliance. Background in healthcare; skills in process improvement, reporting, and team leadership that transfer to any PM environment. Denver, CO.">
 <meta property="og:title" content="Kaylee Gassen — Program Manager | Healthcare Operations">
-<meta property="og:description" content="Program Manager. Six Sigma Black Belt (AIGPE). Zero compliance findings across all programs. Client satisfaction improved 47%→78%.">
+<meta property="og:description" content="Program Manager · Six Sigma Black Belt · Power BI · PMP in progress · 47%→86% satisfaction · 100% compliance · Process improvement, reporting, team leadership · Healthcare background, transferable skills · Denver, CO">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://kaylee-gassen.github.io/project.portfolio.github.io/">
+  <link rel="canonical" href="https://kaylee-gassen.github.io/project.portfolio.github.io/">
 <meta property="og:image" content="https://kaylee-gassen.github.io/project.portfolio.github.io/preview.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Kaylee Gassen — Program Manager | Healthcare Operations">
-<meta name="twitter:description" content="Six Sigma Black Belt. 5+ years healthcare operations. Zero compliance findings. 47%→78% client satisfaction.">
+<meta name="twitter:description" content="Program Manager · Six Sigma Black Belt · PMP in progress · Built operational programs from scratch · 47%→86% satisfaction · 100% compliance · Denver, CO">
 <meta name="twitter:image" content="https://kaylee-gassen.github.io/project.portfolio.github.io/preview.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,11 +38,37 @@ body{background:#060d18;color:#dde6f4;font-family:'IBM Plex Sans',system-ui,sans
   --nav:60px;--max:1100px;--r:6px;
   --mono:'IBM Plex Mono',monospace;
 }
+@media(prefers-color-scheme:light){
+  :root{
+    --bg0:#f8fafc;--bg1:#f1f5f9;--bg2:#e8eef5;--bg3:#dde6f0;
+    --b0:#cbd5e1;--b1:#94a3b8;
+    --txt:#1e293b;--sub:#475569;--dim:#64748b;
+    --nav:#ffffffee;
+  }
+}
 .wrap{max-width:var(--max);margin:0 auto;padding:0 36px}
-section{padding:72px 0;border-top:1px solid var(--b0)}
+section{padding:72px 0;border-top:1px solid var(--b0);scroll-margin-top:var(--nav)}
 .lbl{font-size:.64rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--blue);display:block;margin-bottom:8px}
 .rule{width:36px;height:2px;background:var(--blue);margin:10px 0 32px}
 h2{font-size:clamp(1.4rem,2.8vw,2rem);font-weight:600;letter-spacing:-.01em}
+/* PANEL INFO BAR — shared across tool panels */
+.panel-info{background:var(--bg0);border:1px solid var(--b0);border-radius:var(--r);padding:14px 18px;margin-bottom:16px}
+.panel-info-title{font-size:.82rem;font-weight:600;margin-bottom:3px}
+.panel-info-sub{font-size:.75rem;color:var(--sub);line-height:1.6}
+/* STAFF TRACKER FORM ELEMENTS */
+.sf-input,.sf-textarea{width:100%;padding:8px 12px;background:var(--bg2);border:1px solid var(--b0);border-radius:var(--r);color:var(--txt);font-size:.82rem;font-family:inherit;outline:none;box-sizing:border-box;transition:border-color .15s}
+.sf-input:focus,.sf-textarea:focus{border-color:var(--blue)}
+.sf-input::placeholder,.sf-textarea::placeholder{color:var(--dim)}
+.sf-textarea{resize:none}
+.sf-date{width:100%;padding:6px 10px;background:var(--bg2);border:1px solid var(--b0);border-radius:4px;color:var(--txt);font-size:.75rem;font-family:inherit;outline:none;box-sizing:border-box}
+/* CONTACT GRID */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:8px}
+.contact-card{display:flex;align-items:center;gap:16px;background:var(--bg1);border:1px solid var(--b0);border-radius:var(--r);padding:18px 22px;text-decoration:none;transition:border-color .15s}
+.contact-card:hover{border-color:var(--blue)}
+.contact-card-icon{width:36px;height:36px;border-radius:50%;background:var(--bgl);border:1px solid rgba(59,130,246,.2);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.contact-card-label{font-size:.62rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--dim);margin-bottom:2px}
+.contact-card-value{font-size:.93rem;font-weight:500;color:var(--txt)}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
 /* NAV */
 nav{position:fixed;top:0;left:0;right:0;z-index:100;height:var(--nav);background:rgba(6,13,24,.97);border-bottom:1px solid var(--b0);backdrop-filter:blur(12px)}
 .ni{max-width:var(--max);margin:0 auto;padding:0 36px;height:100%;display:flex;align-items:center;justify-content:space-between}
@@ -74,7 +103,7 @@ h1{font-size:clamp(2rem,4vw,3rem);font-weight:600;line-height:1.15;letter-spacin
 /* HERO PHOTO */
 .hero-grid{display:grid;grid-template-columns:1fr 220px;gap:48px;align-items:center}
 .hero-photo-wrap{display:flex;justify-content:center;align-items:flex-start;padding-top:24px;flex-shrink:0}
-.hero-photo{width:210px;height:210px;border-radius:50%;object-fit:cover;object-position:center 20%;border:3px solid var(--blue);box-shadow:0 0 0 8px rgba(59,130,246,.1),0 20px 50px rgba(0,0,0,.35);display:block}
+.hero-photo{width:210px;height:210px;border-radius:50%;object-fit:cover;object-position:center 35%;border:3px solid var(--blue);box-shadow:0 0 0 8px rgba(59,130,246,.1),0 20px 50px rgba(0,0,0,.35);display:block}
 @media(max-width:700px){.hero-grid{grid-template-columns:1fr}.hero-photo-wrap{padding-top:0;order:-1;justify-content:flex-start}.hero-photo{width:120px;height:120px}}
 /* IMPACT */
 #impact{padding:44px 0;background:var(--bg1)}
@@ -94,15 +123,7 @@ h1{font-size:clamp(2rem,4vw,3rem);font-weight:600;line-height:1.15;letter-spacin
 .sbv{font-size:.82rem;color:var(--txt)}
 .sbv a{color:var(--blue);text-decoration:none}.sbv a:hover{text-decoration:underline}
 .sbv.g{color:var(--grn)}.sbv.b{color:var(--blue)}
-/* TESTIMONIALS */
-#testimonial{padding:60px 0;background:var(--bg1)}
-.testi-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-.testi-card{background:var(--bg0);border:1px solid var(--b0);border-radius:var(--r);padding:28px;display:flex;flex-direction:column;gap:0;position:relative}
-.testi-card::before{content:'\201C';position:absolute;top:16px;left:20px;font-size:3rem;color:var(--blue);opacity:.25;line-height:1;font-family:Georgia,serif}
-.testi-text{font-size:.88rem;color:var(--txt);line-height:1.85;font-style:italic;margin-bottom:20px;padding-top:20px;flex:1}
-.testi-divider{width:28px;height:2px;background:var(--blue);margin-bottom:14px}
-.testi-name{font-size:.78rem;font-weight:500;color:var(--txt);margin-bottom:3px}
-.testi-role{font-size:.7rem;color:var(--sub)}
+
 /* EXPERIENCE */
 .el{display:flex;flex-direction:column;gap:2px}
 .ec{background:var(--bg0);border:1px solid var(--b0);border-radius:var(--r);overflow:hidden}
@@ -149,35 +170,10 @@ h1{font-size:clamp(2rem,4vw,3rem);font-weight:600;line-height:1.15;letter-spacin
 .csmn{font-size:1.2rem;font-weight:600;line-height:1;margin-bottom:2px;color:var(--blue)}
 .csmn.g{color:var(--grn)}
 .csmlb{font-size:.61rem;color:var(--dim);line-height:1.35}
-/* PROGRAM IMPACT VISUAL */
-#program-impact{background:var(--bg0)}
-.impact-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:20px}
-.impact-vis{background:var(--bg1);border:1px solid var(--b0);border-radius:var(--r);padding:24px}
-.impact-vis h4{font-size:.68rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--blue);margin-bottom:20px}
-.before-after{display:flex;align-items:center;justify-content:center;gap:20px;margin-bottom:24px}
-.ba-block{text-align:center}
-.ba-pct{font-size:3rem;font-weight:700;line-height:1}
-.ba-lbl{font-size:.72rem;color:var(--sub);margin-top:4px}
-.ba-arrow{font-size:1.5rem;color:var(--grn)}
-.bar-compare{margin-bottom:16px}
-.bar-row{margin-bottom:10px}
-.bar-label{font-size:.72rem;color:var(--sub);margin-bottom:4px;display:flex;justify-content:space-between}
-.bar-track{height:28px;background:var(--bg2);border-radius:4px;overflow:hidden}
-.bar-fill{height:100%;border-radius:4px;display:flex;align-items:center;padding-left:10px;font-size:.76rem;font-weight:500;color:#fff}
-.impact-driver{background:var(--bg2);border:1px solid var(--b0);border-radius:var(--r);padding:16px 18px}
-.impact-driver h5{font-size:.68rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--grn);margin-bottom:10px}
-.driver-item{display:flex;align-items:flex-start;gap:8px;font-size:.81rem;color:var(--sub);margin-bottom:8px;line-height:1.5}
-.driver-item::before{content:'▲';color:var(--grn);font-size:.6rem;flex-shrink:0;margin-top:3px}
-.impact-chart-area{background:var(--bg1);border:1px solid var(--b0);border-radius:var(--r);padding:24px}
-.impact-chart-area h4{font-size:.68rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--blue);margin-bottom:14px}
-.ich{position:relative;height:260px;width:100%}
-.impact-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--b0);border-radius:var(--r);overflow:hidden;margin-top:20px}
-.istat{background:var(--bg1);padding:18px;text-align:center}
-.istat-n{font-size:1.6rem;font-weight:700;color:var(--grn);margin-bottom:3px}
-.istat-l{font-size:.7rem;color:var(--dim);line-height:1.3}
+
 /* TOOLS */
 #tools{background:var(--bg1)}
-.tool-tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:24px}
+.tool-tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:24px;row-gap:6px}
 .ttab{font-size:.75rem;font-weight:500;padding:8px 16px;border-radius:var(--r);border:1px solid var(--b0);background:var(--bg0);color:var(--sub);cursor:pointer;transition:all .15s;display:flex;align-items:center;gap:6px}
 .ttab:hover{border-color:var(--b1);color:var(--txt)}
 .ttab.active{background:var(--blue);color:#fff;border-color:var(--blue)}
@@ -303,25 +299,13 @@ h1{font-size:clamp(2rem,4vw,3rem);font-weight:600;line-height:1.15;letter-spacin
 .kpi-cat{background:var(--bg3)!important;color:var(--txt)!important;font-weight:500!important;padding:8px 12px!important;font-size:.76rem!important}
 .kpi-on{background:var(--ggl);color:var(--grn);font-weight:600;text-align:center;padding:7px 6px;font-size:.72rem}
 .kpi-warn{background:var(--agl);color:var(--amb);font-weight:600;text-align:center;padding:7px 6px;font-size:.72rem}
-.phase-hdr{color:#fff!important;font-weight:600!important;padding:9px 12px!important;font-size:.72rem!important}
-/* GANTT */
-.gantt-wrap{background:var(--bg0);border:1px solid var(--b0);border-radius:var(--r);padding:20px;overflow-x:auto;-webkit-overflow-scrolling:touch}
-.gantt-inner{min-width:580px}
-.gantt-row{display:flex;align-items:center;margin-bottom:10px;height:38px}
-.gantt-label{width:200px;flex-shrink:0;font-size:.74rem;color:var(--sub);padding-right:14px;line-height:1.3}
-.gantt-label strong{display:block;font-size:.77rem;font-weight:500;color:var(--txt)}
-.gantt-track{flex:1;height:28px;background:var(--bg2);border-radius:4px;position:relative;border:1px solid var(--b0)}
-.gantt-bar{position:absolute;top:3px;height:22px;border-radius:3px;display:flex;align-items:center;padding:0 8px;font-size:.66rem;font-weight:500;color:#fff;white-space:nowrap;overflow:hidden}
-.gantt-ms{position:absolute;top:50%;transform:translate(-50%,-50%);width:10px;height:10px;border-radius:50%;border:2px solid var(--bg0);z-index:2}
-.gantt-legend{display:flex;gap:16px;flex-wrap:wrap;margin-top:14px;padding-top:12px;border-top:1px solid var(--b0)}
-.gantt-leg{display:flex;align-items:center;gap:6px;font-size:.7rem;color:var(--sub)}
-.gantt-leg-dot{width:10px;height:10px;border-radius:2px;flex-shrink:0}
+.phase-hdr{color:#fff;font-weight:600;padding:8px 12px;font-size:.75rem;letter-spacing:.06em;text-transform:uppercase}
+
 /* SKILLS + RADAR */
 .skills-layout{display:grid;grid-template-columns:320px 1fr;gap:20px;align-items:start}
-.radar-box{background:var(--bg0);border:1px solid var(--b0);border-radius:var(--r);padding:20px}
+.radar-box{background:var(--bg0);border:1px solid var(--b0);border-radius:var(--r);padding:24px 16px}
 .radar-box h4{font-size:.68rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--blue);margin-bottom:6px}
 .radar-box p{font-size:.7rem;color:var(--dim);margin-bottom:16px}
-.rch{position:relative;height:280px;width:100%}
 .sg{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--b0)}
 .sc{background:var(--bg0);padding:22px}
 .sce{font-size:.57rem;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--blue);margin-bottom:4px}
@@ -342,34 +326,6 @@ h1{font-size:clamp(2rem,4vw,3rem);font-weight:600;line-height:1.15;letter-spacin
 .certi{font-size:.7rem;color:var(--sub)}
 /* CONTACT */
 #contact{background:var(--bg1)}
-.ctg{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
-.cth{font-size:clamp(1.1rem,2.2vw,1.55rem);font-weight:600;margin-bottom:8px}
-.ctp{font-size:.86rem;color:var(--sub);line-height:1.8;margin-bottom:20px;max-width:400px}
-.clinks{display:flex;flex-direction:column;gap:1px;background:var(--b0);border-radius:var(--r);overflow:hidden;margin-bottom:18px}
-.clr{background:var(--bg0);padding:11px 15px;display:flex;align-items:center;justify-content:space-between}
-.clk{font-size:.58rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--dim)}
-.clv{font-size:.81rem;color:var(--txt)}
-.clv a{text-decoration:none;color:var(--blue)}.clv a:hover{text-decoration:underline}
-.clv.g{color:var(--grn)}
-/* CONTACT FORM */
-.cf{display:flex;flex-direction:column;gap:10px}
-.cf-row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-.cf input,.cf textarea,.cf select{width:100%;padding:10px 14px;background:var(--bg2);border:1px solid var(--b0);border-radius:var(--r);color:var(--txt);font-size:.82rem;font-family:inherit;outline:none;transition:border-color .15s}
-.cf input:focus,.cf textarea:focus{border-color:var(--blue)}
-.cf input::placeholder,.cf textarea::placeholder{color:var(--dim)}
-.cf textarea{resize:none;height:100px;line-height:1.6}
-.cf-submit{background:var(--blue);color:#fff;border:none;border-radius:var(--r);padding:10px 24px;font-size:.82rem;font-weight:500;cursor:pointer;transition:background .15s;font-family:inherit;display:flex;align-items:center;gap:6px}
-.cf-submit:hover{background:#1e4db7}
-.cf-note{font-size:.68rem;color:var(--dim);margin-top:4px}
-.ob{border:1px solid var(--b0);border-radius:var(--r);overflow:hidden}
-.obt{background:var(--bg2);padding:22px;border-bottom:1px solid var(--b0)}
-.obs{font-size:.58rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--grn);display:flex;align-items:center;gap:6px;margin-bottom:10px}
-.obs::before{content:'';width:5px;height:5px;border-radius:50%;background:var(--grn);animation:pulse 2s infinite}
-.obt h3{font-size:1rem;font-weight:600;margin-bottom:5px}
-.obt p{font-size:.8rem;color:var(--sub);line-height:1.7}
-.obr{padding:14px 22px;display:flex;flex-wrap:wrap;gap:6px;background:var(--bg1);border-bottom:1px solid var(--b0)}
-.obrp{font-size:.7rem;font-weight:500;padding:4px 11px;border-radius:var(--r);border:1px solid var(--b1);color:var(--sub);background:var(--bg2)}
-.obc{padding:14px 22px;background:var(--bg0);display:flex;gap:8px;flex-wrap:wrap}
 /* FOOTER */
 footer{border-top:1px solid var(--b0);padding:22px 0}
 .fi{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px}
@@ -381,12 +337,13 @@ footer{border-top:1px solid var(--b0);padding:22px 0}
 /* RESPONSIVE */
 @media(max-width:900px){
   .wrap{padding:0 18px}.ni{padding:0 18px}
-  .nlinks li:not(:last-child):not(:nth-last-child(2)){display:none}
+  .nlinks li:nth-child(2),.nlinks li:nth-child(3),.nlinks li:nth-child(5),.nlinks li:nth-child(6){display:none}
   #home{padding:calc(var(--nav)+52px) 0 56px}
   section{padding:52px 0}
   .ig{grid-template-columns:repeat(3,1fr)}
   .ic:nth-child(4),.ic:nth-child(5){display:none}
-  .testi-grid,#about .ag,.ctg,.impact-grid,.nf-wrap{grid-template-columns:1fr}
+  #about .ag,.nf-wrap{grid-template-columns:1fr}
+  .contact-grid{grid-template-columns:1fr!important}
   .ecols,.csbody{grid-template-columns:1fr}
   .ecol:last-child,.cscol+.cscol{border-left:none;border-top:1px solid var(--b0)}
   .csmeta,.csmets,.d-metrics,.res-mets{grid-template-columns:repeat(2,1fr)}
@@ -394,18 +351,22 @@ footer{border-top:1px solid var(--b0);padding:22px 0}
   .dkpi-row{grid-template-columns:repeat(3,1fr)}
   .fb-grid{grid-template-columns:1fr}
   .skills-layout{grid-template-columns:1fr}
-  .sg,.certg{grid-template-columns:1fr}
-  .impact-stats{grid-template-columns:1fr}
-  .cf-row{grid-template-columns:1fr}
+  .sg{grid-template-columns:1fr}
+  .certg{grid-template-columns:1fr}
+  
   .tbl-hint{display:block}
 }
 @media(max-width:520px){
-  .dkpi-row{grid-template-columns:repeat(2,1fr)}
+  .dkpi-row{grid-template-columns:repeat(2,1fr).ttab{font-size:.68rem;padding:6px 10px}}
   .d-phases .dph-n{display:none}
   .tool-tabs .ttab{font-size:.68rem;padding:6px 12px}
   .tmpl-tab{font-size:.64rem;padding:5px 10px}
 }
+.chart-inset{margin:16px 0;background:var(--bg1);border:1px solid var(--b0);border-radius:var(--r);padding:14px 16px}
 </style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Kaylee Gassen","jobTitle":"Program Manager","description":"Program Manager with 5+ years in healthcare operations and 4+ years in direct program management. Six Sigma Black Belt. Process improvement, KPI reporting, cross-functional team leadership, staff training, and compliance management.","url":"https://kaylee-gassen.github.io/project.portfolio.github.io/","email":"kayleegassen@gmail.com","telephone":"+17206333302","address":{"@type":"PostalAddress","addressLocality":"Denver","addressRegion":"CO","addressCountry":"US"},"sameAs":["https://linkedin.com/in/kaylee-gassen"],"knowsAbout":["Monday.com","Project Management","Program Management","Healthcare Operations","Six Sigma","Process Improvement","KPI Reporting","Power BI","Staff Training","Curriculum Development","Compliance Management","EMR/EHR Systems","Recruiting Operations"],"hasCredential":[{"@type":"EducationalOccupationalCredential","name":"Six Sigma Black Belt","credentialCategory":"Professional Certification","recognizedBy":{"@type":"Organization","name":"AIGPE"}},{"@type":"EducationalOccupationalCredential","name":"Certified Recreational Therapist","credentialCategory":"Professional Certification","recognizedBy":{"@type":"Organization","name":"NCTRC"}}]}
+</script>
 </head>
 <body>
 
@@ -414,10 +375,12 @@ footer{border-top:1px solid var(--b0);padding:22px 0}
   <div class="ni">
     <a href="#home" class="nl">Kaylee <b>Gassen</b></a>
     <ul class="nlinks">
-      <li><a href="#about">About</a></li>
-      <li><a href="#experience">Experience</a></li>
       <li><a href="#case-studies">Case Studies</a></li>
-      <li><a href="#tools">Projects &amp; Tools</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#about">My Story</a></li>
+      <li><a href="#tools">Tools</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#education">Education</a></li>
       <li><a href="#contact">Contact</a></li>
       <li><a href="Kaylee_Gassen_Resume.pdf" download class="nres"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M8 2v8M5 7l3 3 3-3M2 13h12"/></svg>Resume</a></li>
     </ul>
@@ -428,26 +391,26 @@ footer{border-top:1px solid var(--b0);padding:22px 0}
 <section id="home">
   <div class="wrap">
     <div class="hero-grid">
-    <div>
-    <div class="hbadge f">Open to new opportunities</div>
-    <h1 class="f">Zero compliance findings.<br>100% of programs managed.</h1>
-    <p class="hsub f">Program Manager · Six Sigma Black Belt (AIGPE) · 5+ years in healthcare operations · KPI Reporting · Power BI · Process Improvement</p>
-    <p class="hnote f">Seeking mid-level to senior PM roles in healthcare, corporate, or PMO · Denver, CO · Remote &amp; Hybrid OK</p>
-    <div class="tags f">
-      <span class="tag hi">Power BI</span><span class="tag hi">Excel</span><span class="tag hi">KPI Reporting</span>
-      <span class="tag hi">Process Improvement</span><span class="tag hi">Healthcare Operations</span><span class="tag hi">Project Management</span>
-      <span class="tag">Six Sigma Black Belt (AIGPE)</span><span class="tag">Compliance Management</span>
-      <span class="tag">Stakeholder Coordination</span><span class="tag">HIPAA · EMR/EHR</span>
-    </div>
-    <div class="hbtns f">
-      <a href="#tools" class="btn btn-blue">View Projects &amp; Tools</a>
-      <a href="#case-studies" class="btn btn-ghost">Case Studies</a>
-      <a href="Kaylee_Gassen_Resume.pdf" download class="btn btn-grn"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M8 2v8M5 7l3 3 3-3M2 13h12"/></svg>Download Resume</a>
-    </div>
-    </div>
-    <div class="hero-photo-wrap f">
-      <img src="headshot.jpg" alt="Kaylee Gassen — Program Manager" class="hero-photo">
-    </div>
+      <div>
+        <div class="hbadge f">Open to new opportunities · Denver, CO</div>
+        <h1 class="f">Program Manager with five years<br>of operational program management.</h1>
+        <p class="hsub f">Built reporting infrastructure from scratch, hired and trained teams, maintained clean compliance across every audit, and produced outcomes worth showing. The background is healthcare. The skills aren't.</p>
+        <p class="hnote f">Senior PM · Program Ops · Corporate or Healthcare · Denver, CO · Remote &amp; Hybrid Open</p>
+        <p class="hnote f" style="opacity:.7;font-size:.72rem;margin-top:4px">Looking for a Senior PM or Program Manager role where I can build or fix operational infrastructure — open to healthcare and corporate environments.</p>
+        <div class="tags f">
+          <span class="tag hi">Six Sigma Black Belt</span><span class="tag hi">Power BI</span><span class="tag hi">Monday.com</span>
+          <span class="tag">Process Improvement</span><span class="tag">Compliance Management</span><span class="tag">PMP in Progress</span>
+        </div>
+        <div class="hbtns f">
+          <a href="#case-studies" class="btn btn-blue">Case Studies + Results →</a>
+          <a href="#tools" class="btn btn-ghost">Live Dashboard & Tools</a>
+          <a href="https://linkedin.com/in/kaylee-gassen" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">LinkedIn ↗</a>
+          <a href="Kaylee_Gassen_Resume.pdf" download class="btn btn-grn"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M8 2v8M5 7l3 3 3-3M2 13h12"/></svg>Resume</a>
+        </div>
+      </div>
+      <div class="hero-photo-wrap f">
+        <img src="headshot.jpg" alt="Kaylee Gassen" class="hero-photo" onerror="this.style.background='var(--bg2)';this.removeAttribute('src')">
+      </div>
     </div>
   </div>
 </section>
@@ -455,159 +418,62 @@ footer{border-top:1px solid var(--b0);padding:22px 0}
 <!-- IMPACT -->
 <section id="impact">
   <div class="wrap">
-    <div class="lbl f">Operational Impact — Verified Results</div>
+    <div class="lbl f">The results.</div>
     <div class="ig f">
-      <div class="ic"><div class="icn">100<sup>%</sup></div><div class="ict">Documentation compliance — zero findings across all programs</div></div>
-      <div class="ic"><div class="icn">78<sup>%</sup></div><div class="ict">Client satisfaction — up from 47% via rec therapy track created</div></div>
-      <div class="ic"><div class="icn">+15<sup>%</sup></div><div class="ict">Admissions growth driven by Six Sigma DMAIC implementation</div></div>
-      <div class="ic"><div class="icn">15<sup>+</sup></div><div class="ict">Weekly multidisciplinary meetings coordinated across programs</div></div>
-      <div class="ic"><div class="icn">40</div><div class="ict">Active residential clients managed across program workflows</div></div>
+      <div class="ic"><div class="icn">100<sup>%</sup></div><div class="ict">Documentation compliance — clean record across every program</div></div>
+      <div class="ic"><div class="icn">86<sup>%</sup></div><div class="ict">Client satisfaction at Mountain Springs Recovery — up from 47%</div></div>
+      <div class="ic"><div class="icn">+15<sup>%</sup></div><div class="ict">Admissions growth at Mountain Springs after DMAIC process work</div></div>
+      <div class="ic"><div class="icn">15<sup>+</sup></div><div class="ict">Multidisciplinary meetings run per week across clinical, ops, and admin</div></div>
+      <div class="ic"><div class="icn">20</div><div class="ict">Clients managed across active program caseload</div></div>
     </div>
-  </div>
-</section>
-
-<!-- ABOUT -->
-<section id="about">
-  <div class="wrap">
-    <div class="f"><span class="lbl">Professional Summary</span><div class="rule"></div></div>
-    <div class="ag f">
-      <div>
-        <p class="ap">Program manager with 5+ years of experience coordinating healthcare operations, managing cross-functional project teams, and delivering measurable process improvements in high-compliance environments. Six Sigma Black Belt (AIGPE) with a proven record in process optimization, KPI reporting, stakeholder alignment, and compliance management.</p>
-        <p class="ap">Led end-to-end program design across behavioral health and long-term care settings — from scoping and scheduling through compliance documentation, team leadership of 9+, budget management, and executive-level KPI reporting via Power BI and Excel. Created a recreational therapy track that drove client satisfaction from 47% to 78% positive reviews. Zero compliance findings across every program managed.</p>
-        <p class="ap">Actively pursuing mid-level to senior Project Manager or Program Manager roles where certifications, reporting experience, and operational background contribute immediately.</p>
-        <div class="atags"><span class="atag">Denver, CO</span><span class="atag">Remote &amp; Hybrid OK</span><span class="atag">Full-Time</span><span class="atag">Healthcare · Corporate · PMO</span></div>
-      </div>
-      <div>
-        <div class="sb">
-          <div class="sbr"><div class="sbl">Email</div><div class="sbv b"><a href="mailto:kayleegassen@gmail.com">kayleegassen@gmail.com</a></div></div>
-          <div class="sbr"><div class="sbl">Location</div><div class="sbv">Denver, CO · Remote / Hybrid OK</div></div>
-          <div class="sbr"><div class="sbl">LinkedIn</div><div class="sbv b"><a href="https://linkedin.com/in/kaylee-gassen-999464160" target="_blank" rel="noopener">kaylee-gassen-999464160</a></div></div>
-          <div class="sbr"><div class="sbl">Analytics</div><div class="sbv">Power BI · DAX · Excel · Data Visualization</div></div>
-          <div class="sbr"><div class="sbl">Budget Managed</div><div class="sbv">$1,000–$5,000 program operational budgets</div></div>
-          <div class="sbr"><div class="sbl">Targeting</div><div class="sbv b">Mid-level to Senior PM Roles</div></div>
-          <div class="sbr"><div class="sbl">Status</div><div class="sbv g">Actively seeking</div></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- TESTIMONIALS -->
-<section id="testimonial">
-  <div class="wrap">
-    <div class="f"><span class="lbl">Recognition &amp; Testimonials</span><h2>In the words of those who worked with me.</h2><div class="rule"></div></div>
-    <div class="testi-grid f">
-      <div class="testi-card">
-        <p class="testi-text">Kaylee was very helpful and informative. She led each supervision with strengths she noticed from me during the week and was collaborative on how she wanted me to improve in the ways I provided the therapeutic services to ensure compliance and accurate documentation of services.</p>
-        <div class="testi-divider"></div>
-        <div class="testi-name">Clinical Staff Member</div>
-        <div class="testi-role">Mountain Springs Recovery · Supervised by Kaylee Gassen, Program Manager</div>
-      </div>
-      <div class="testi-card">
-        <p class="testi-text">Works well under pressure and knows how to make tough decisions efficiently. Always maintains a positive attitude and finds new ways to creatively problem solve and keep the team on track.</p>
-        <div class="testi-divider"></div>
-        <div class="testi-name">Colleague</div>
-        <div class="testi-role">Denver Children's Home · Program Operations</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- EXPERIENCE -->
-<section id="experience">
-  <div class="wrap">
-    <div class="f"><span class="lbl">Work Experience</span><h2>Three roles. One consistent thread: results.</h2><div class="rule"></div></div>
-    <div class="el">
-
-      <div class="ec f">
-        <div class="eh"><div class="ehl"><div class="ebg">CURRENT</div><div><div class="et">Program Lead Counselor</div><div class="eo">Denver Children's Home</div></div></div><div class="emeta"><span class="eloc">Denver, CO</span><span class="edates">Jan 2023 – Present</span></div></div>
-        <div class="esum">Program operations lead for a 40-client residential youth treatment facility — scheduling, compliance reporting, team coordination, and stakeholder communication. Created a recreational therapy track that raised client satisfaction from 47% to 78%.</div>
-        <div class="ecols">
-          <div class="ecol"><div class="eclbl">Operations &amp; Program Development</div>
-            <div class="ebul"><span class="edot"></span>Created recreational therapy track — drove satisfaction ratings from 47% → 78% positive reviews</div>
-            <div class="ebul"><span class="edot"></span>Lead 15+ weekly multidisciplinary meetings — managing all scheduling and dependencies</div>
-            <div class="ebul"><span class="edot"></span>Primary liaison between clinical teams, families, and 2+ external service providers</div>
-          </div>
-          <div class="ecol"><div class="eclbl">Reporting &amp; Compliance</div>
-            <div class="ebul"><span class="edot"></span>Maintain 100% regulatory compliance across 15+ active EMR cases — zero audit findings</div>
-            <div class="ebul"><span class="edot"></span>Deliver weekly and monthly KPI reports to leadership via Microsoft Excel</div>
-            <div class="ebul"><span class="edot"></span>Onboarded and trained 8+ new staff — from training design through completion tracking</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="ec f">
-        <div class="eh"><div class="ehl"><div class="ebg">PREV</div><div><div class="et">Program Manager, Recreational Therapy</div><div class="eo">Mountain Springs Recovery</div></div></div><div class="emeta"><span class="eloc">Denver, CO</span><span class="edates">Q1 2022 – Q4 2023</span></div></div>
-        <div class="esum">Full program ownership for a multi-provider behavioral health program — 40 clients across 3 treatment tracks. Responsible for operations, scheduling, budget ($1,000–$5,000), compliance, and cross-functional team leadership of 9+.</div>
-        <div class="ecols">
-          <div class="ecol"><div class="eclbl">Program Management</div>
-            <div class="ebul"><span class="edot"></span>Directed end-to-end operations: scheduling, budget management, and process workflows</div>
-            <div class="ebul"><span class="edot"></span>Led cross-functional team of 9+ across clinical, operations, and administrative departments</div>
-            <div class="ebul"><span class="edot"></span>Applied Six Sigma DMAIC — achieved +15% admissions growth and +30-day client retention</div>
-          </div>
-          <div class="ecol"><div class="eclbl">Compliance &amp; Performance</div>
-            <div class="ebul"><span class="edot"></span>Zero compliance findings — rigorous EMR documentation and audit preparation</div>
-            <div class="ebul"><span class="edot"></span>Reduced scheduling conflicts by 15% via standardized communication frameworks</div>
-            <div class="ebul"><span class="edot"></span>Built Power BI dashboard consolidating scheduling, compliance, and engagement KPIs</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="ec f">
-        <div class="eh"><div class="ehl"><div class="ebg">PREV</div><div><div class="et">Lead Therapist</div><div class="eo">Tampa Community Hospital</div></div></div><div class="emeta"><span class="eloc">Tampa, FL</span><span class="edates">2021 – 2022</span></div></div>
-        <div class="esum">Clinical coordination and scheduling lead in an acute care hospital — cross-departmental communication, EHR compliance, and performance reporting.</div>
-        <div class="ecols">
-          <div class="ecol"><div class="eclbl">Coordination &amp; Scheduling</div>
-            <div class="ebul"><span class="edot"></span>Coordinated therapy scheduling across clinical and multidisciplinary treatment teams</div>
-            <div class="ebul"><span class="edot"></span>Facilitated cross-departmental communication in a high-volume acute care environment</div>
-          </div>
-          <div class="ecol"><div class="eclbl">Documentation &amp; Reporting</div>
-            <div class="ebul"><span class="edot"></span>Maintained 100% EHR documentation compliance across multiple departments</div>
-            <div class="ebul"><span class="edot"></span>Prepared clinical performance reports supporting treatment planning and oversight</div>
-          </div>
-        </div>
-      </div>
-
-    </div>
+    <p class="f" style="font-size:.82rem;color:var(--sub);text-align:center;padding-top:24px">Two of those, in full detail. ↓</p>
   </div>
 </section>
 
 <!-- CASE STUDIES -->
 <section id="case-studies">
   <div class="wrap">
-    <div class="f"><span class="lbl">Case Studies</span><h2>Two programs. Full operational ownership.</h2><div class="rule"></div></div>
+    <div class="f"><span class="lbl">Case Studies</span><h2>Two programs, fully documented.</h2><div class="rule"></div>
+      <p style="font-size:.84rem;color:var(--sub);max-width:580px;margin-bottom:28px">Full detail on the problem, what I did, and what came of it.</p>
+    </div>
     <div class="csl">
       <div class="csc f">
-        <div class="csh"><div><div class="csnum">PROJECT 01</div><div class="cstitle">Integrative Recovery Program Design &amp; Launch</div><div class="csorg">Mountain Springs Recovery · Behavioral Health Operations</div></div><span class="csper">Q1 2022 – Q4 2023</span></div>
+        <div class="csh"><div><div class="csnum">PROJECT 01</div><div class="cstitle">Integrative Recovery Program Design &amp; Launch</div><div class="csorg">Mountain Springs Recovery · Behavioral Health Operations</div></div><span class="csper">Q1 2022 – Apr 2023</span></div>
         <div class="csbody">
-          <div class="cscol"><div class="csclbl">Business Problem</div><div class="csctitle">Fragmented reporting, no operational visibility.</div><p class="csctext">No standardized infrastructure, no reporting framework, no centralized KPI visibility — creating compliance risk in a regulated environment. Scheduling, compliance, and engagement data lived in disconnected systems with no executive-ready view.</p></div>
-          <div class="cscol"><div class="csclbl">Solution</div><div class="csctitle">Power BI dashboard + end-to-end program framework.</div><p class="csctext">Designed and launched the full program from scoping through execution. Built Power BI dashboard consolidating all metrics. Applied Lean Six Sigma DMAIC to standardize workflows across a cross-functional team of 9+. Managed program operational budgets of $1,000–$5,000.</p></div>
+          <div class="cscol"><div class="csclbl">The Problem</div><div class="csctitle">No infrastructure, no reporting, no visibility.</div><p class="csctext">When I arrived, scheduling lived in one place, compliance in another, and engagement data nowhere. Leadership had no way to see what was happening across the program, which created real compliance risk.</p></div>
+          <div class="cscol"><div class="csclbl">Solution</div><div class="csctitle">Built the reporting infrastructure, then fixed the intake process.</div><p class="csctext">I started with the dashboard — leadership needed visibility before anything else could change. Built it in Power BI, pulling scheduling, compliance, and engagement data into one view. Then ran a full DMAIC project on the intake and scheduling process that was quietly capping admissions.</p></div>
         </div>
         <div class="csmeta">
-          <div class="csmc"><div class="csml">KPIs Tracked</div><div class="pills"><span class="pk">Scheduling Efficiency</span><span class="pk">Compliance Rate</span><span class="pk">Staff Utilization</span><span class="pk">Client Retention</span></div></div>
-          <div class="csmc"><div class="csml">Tools Used</div><div class="pills"><span class="pt">Power BI</span><span class="pt">Excel</span><span class="pt">DAX</span><span class="pt">EMR Platform</span></div></div>
-          <div class="csmc"><div class="csml">Methodology</div><div class="pills"><span class="pk">Lean Six Sigma (AIGPE)</span><span class="pk">DMAIC</span><span class="pk">Process Mapping</span><span class="pk">Change Management</span></div></div>
+          <div class="csmc"><div class="csml">KPIs Tracked</div><div class="pills"><span class="pk">Scheduling Efficiency</span><span class="pk">Compliance Rate</span><span class="pk">Staff Utilization</span><span class="pk">Client Retention</span><span class="pk">Training Completion</span></div></div>
+          <div class="csmc"><div class="csml">Tools Used</div><div class="pills"><span class="pt">Power BI</span><span class="pt">Excel</span><span class="pt">DAX</span><span class="pt">Kipu · MediTech · BlueStep</span></div></div>
+          <div class="csmc"><div class="csml">Methodology</div><div class="pills"><span class="pk">Lean Six Sigma (AIGPE)</span><span class="pk">DMAIC</span><span class="pk">Process Mapping</span><span class="pk">Curriculum Design</span><span class="pk">Change Management</span><span class="pk">RACI Framework</span></div></div>
         </div>
-        <div class="csout"><div class="oi">✓</div><div><div class="olbl">Outcome</div><div class="otxt">15% admissions increase, 30-day client retention improvement, zero compliance findings across full program lifecycle. Full DMAIC case study available in the Projects &amp; Tools section.</div></div></div>
+        <div class="csout"><div class="oi">✓</div><div><div class="olbl">Outcome</div><div class="otxt">Client satisfaction rose from 47% to 86% in eight months. Admissions grew 15%, scheduling conflicts dropped from 28% to 13%, weekly reporting time cut from 3–4 hours to under 30 minutes, and the rec therapy team was fully independent within 6 months of launch.</div></div></div>
+        <div class="chart-inset">
+          <div style="font-size:.68rem;font-weight:600;color:var(--sub);text-transform:uppercase;letter-spacing:.08em;margin-bottom:10px">Client Satisfaction Trend — 8 Month Arc</div>
+          <canvas id="chartImpact" height="80"></canvas>
+        </div>
         <div class="csmets">
-          <div class="csm"><div class="csmn">+15%</div><div class="csmlb">Admissions increase</div></div>
+          <div class="csm"><div class="csmn">47→86%</div><div class="csmlb">Client satisfaction</div></div>
+          <div class="csm"><div class="csmn">+15%</div><div class="csmlb">Admissions growth (YoY)</div></div>
           <div class="csm"><div class="csmn">+30 days</div><div class="csmlb">Client retention</div></div>
-          <div class="csm"><div class="csmn">40</div><div class="csmlb">Clients served</div></div>
-          <div class="csm"><div class="csmn g">0</div><div class="csmlb">Compliance findings</div></div>
+          <div class="csm"><div class="csmn">87%</div><div class="csmlb">Reporting time reduced</div></div>
+          <div class="csm"><div class="csmn g">6 mo</div><div class="csmlb">Team fully independent</div></div>
         </div>
       </div>
       <div class="csc f">
-        <div class="csh"><div><div class="csnum">PROJECT 02</div><div class="cstitle">Virtual Program Launch &amp; COVID-19 Services Manual</div><div class="csorg">Long-Term Care Setting · Crisis Operations &amp; Remote Delivery</div></div><span class="csper">Q1 2020 – Q4 2021</span></div>
+        <div class="csh"><div><div class="csnum">PROJECT 02</div><div class="cstitle">Crisis Program Launch &amp; COVID-19 Services Manual</div><div class="csorg">Friends House Retirement Community · Crisis Operations &amp; Remote Delivery</div></div><span class="csper">Summer 2020</span></div>
         <div class="csbody">
-          <div class="cscol"><div class="csclbl">Business Problem</div><div class="csctitle">Pandemic isolation. Zero remote infrastructure.</div><p class="csctext">A facility-wide lockdown left 20 residents with no programming, no family communication, and no structured routine. No virtual delivery model or operational documentation existed for staff or families.</p></div>
-          <div class="cscol"><div class="csclbl">Solution</div><div class="csctitle">Virtual framework + reusable standardized manual.</div><p class="csctext">Scoped and launched virtual programming across diverse ability levels. Established recurring operational reporting workflows tracking engagement and wellbeing. Co-developed the COVID-19 Recreation Services Manual with a three-person team.</p></div>
+          <div class="cscol"><div class="csclbl">The Problem</div><div class="csctitle">Facility locked down overnight with no remote programming in place.</div><p class="csctext">COVID hit and the facility locked down overnight. Twenty residents — many with limited mobility or cognitive impairment — suddenly had no programming, no family visits, and nothing to structure their days. There was no playbook for this.</p></div>
+          <div class="cscol"><div class="csclbl">Solution</div><div class="csctitle">Built a virtual delivery model and documented it for future use.</div><p class="csctext">I built a remote delivery model using Teams and Google Workspace, adapted sessions for different ability levels, and co-wrote a COVID Recreation Manual with a three-person team — so the facility had a real playbook going forward, not just something that worked for now.</p></div>
         </div>
         <div class="csmeta">
           <div class="csmc"><div class="csml">KPIs Tracked</div><div class="pills"><span class="pk">Engagement Rate</span><span class="pk">Wellbeing Score</span><span class="pk">Documentation Compliance</span></div></div>
-          <div class="csmc"><div class="csml">Tools Used</div><div class="pills"><span class="pt">Excel</span><span class="pt">Microsoft Teams</span><span class="pt">Google Workspace</span></div></div>
+          <div class="csmc"><div class="csml">Tools Used</div><div class="pills"><span class="pt">Monday.com</span><span class="pt">Excel</span><span class="pt">Microsoft Teams</span><span class="pt">Google Workspace</span></div></div>
           <div class="csmc"><div class="csml">Methodology</div><div class="pills"><span class="pk">Rapid Program Design</span><span class="pk">Crisis Operations</span><span class="pk">Inclusive Design</span><span class="pk">Technical Writing</span></div></div>
         </div>
-        <div class="csout"><div class="oi">✓</div><div><div class="olbl">Outcome</div><div class="otxt">20% improvement in reported wellbeing during mandatory isolation. Manual became a reusable asset scalable to any long-term care facility. 100% documentation compliance maintained throughout.</div></div></div>
+        <div class="csout"><div class="oi">✓</div><div><div class="olbl">Outcome</div><div class="otxt">20% improvement in reported wellbeing during mandatory isolation. The manual was adopted as the facility standard — something that would hold up next time. 100% documentation compliance maintained throughout.</div></div></div>
+        
         <div class="csmets">
           <div class="csm"><div class="csmn">+20%</div><div class="csmlb">Wellbeing improvement</div></div>
           <div class="csm"><div class="csmn">20</div><div class="csmlb">Residents served</div></div>
@@ -619,45 +485,134 @@ footer{border-top:1px solid var(--b0);padding:22px 0}
   </div>
 </section>
 
-<!-- PROGRAM IMPACT VISUAL -->
-<section id="program-impact">
+<!-- EXPERIENCE -->
+<section id="experience">
   <div class="wrap">
-    <div class="f"><span class="lbl">Program Impact Visual</span><h2>Recreational Therapy Track — Client Satisfaction Results</h2><div class="rule"></div>
-      <p style="font-size:.84rem;color:var(--sub);max-width:580px;margin-bottom:28px">Denver Children's Home · 2023–2024 · Tracked via progress notes, review data, and participation records</p>
-    </div>
-    <div class="impact-grid f">
-      <div class="impact-vis">
-        <h4>Before vs. After — Satisfaction Rate</h4>
-        <div class="before-after">
-          <div class="ba-block"><div class="ba-pct" style="color:var(--red)">47%</div><div class="ba-lbl">Before<br>Rec Track</div></div>
-          <div class="ba-arrow">→</div>
-          <div class="ba-block"><div class="ba-pct" style="color:var(--grn)">78%</div><div class="ba-lbl">After<br>Rec Track</div></div>
-        </div>
-        <div class="bar-compare">
-          <div class="bar-row">
-            <div class="bar-label"><span>Before — Positive Reviews</span><span style="color:var(--red)">47%</span></div>
-            <div class="bar-track"><div class="bar-fill" style="width:47%;background:rgba(239,68,68,.6)"><span>47%</span></div></div>
+    <div class="f"><h2>The roles and what came of them.</h2><div class="rule"></div></div>
+    <div class="el">
+
+      <div class="ec f">
+        <div class="eh"><div class="ehl"><div class="ebg">CURRENT</div><div><div class="et">Program Manager · Youth Treatment Counselor Lead — Group Home</div><div class="eo">Denver Children's Home</div></div></div><div class="emeta"><span class="eloc">Denver, CO</span><span class="edates">Jan 2026 – Present</span></div></div>
+        <div class="esum">The most hands-on role I've had — 4 youth, intensive daily support, real-world life planning. Moved into this setting to deepen experience in direct youth services and independent living work.</div>
+        <div class="ecols">
+          <div class="ecol"><div class="eclbl">Independent Living &amp; Life Planning</div>
+            <div class="ebul"><span class="edot"></span>ILS programming — life skills, budgeting, community navigation, and daily living</div>
+            <div class="ebul"><span class="edot"></span>Coordinate medical appointments, Medicaid, and external service providers</div>
+            <div class="ebul"><span class="edot"></span>Build and maintain individualized life plans — goals tracked across all domains</div>
+            <div class="ebul"><span class="edot"></span>Coordinate across 6+ external agencies per youth — medical, Medicaid, education, legal, and housing</div>
           </div>
-          <div class="bar-row">
-            <div class="bar-label"><span>After — Positive Reviews</span><span style="color:var(--grn)">78%</span></div>
-            <div class="bar-track"><div class="bar-fill" style="width:78%;background:rgba(16,185,129,.7)"><span>78%</span></div></div>
+          <div class="ecol"><div class="eclbl">Documentation &amp; Compliance</div>
+            <div class="ebul"><span class="edot"></span>100% documentation compliance — no audit findings</div>
+            <div class="ebul"><span class="edot"></span>Daily progress notes, incident documentation, and goal tracking in EMR</div>
           </div>
-        </div>
-        <div class="impact-driver">
-          <h5>What Drove the Change</h5>
-          <div class="driver-item">Designed and launched a structured recreational therapy track tailored to client needs and interests</div>
-          <div class="driver-item">Clients reported stronger engagement and enjoyment — tracked via weekly progress notes</div>
-          <div class="driver-item">Improved participation rates directly correlated with positive review scores over time</div>
-          <div class="driver-item">100% documentation compliance maintained throughout the improvement period</div>
         </div>
       </div>
-      <div class="impact-chart-area">
-        <h4>Satisfaction Trend — Program Timeline</h4>
-        <div class="ich"><canvas id="chartImpact"></canvas></div>
-        <div class="impact-stats">
-          <div class="istat"><div class="istat-n">+31pp</div><div class="istat-l">Percentage point improvement in positive reviews</div></div>
-          <div class="istat"><div class="istat-n">66%</div><div class="istat-l">Relative increase in satisfaction rating</div></div>
-          <div class="istat"><div class="istat-n">100%</div><div class="istat-l">Compliance maintained throughout</div></div>
+
+      <div class="ec f">
+        <div class="eh"><div class="ehl"><div class="ebg">PREV</div><div><div class="et">Program Manager · Youth Treatment Counselor Lead — Residential Facility</div><div class="eo">Denver Children's Home</div></div></div><div class="emeta"><span class="eloc">Denver, CO</span><span class="edates">Apr 2023 – Jan 2026</span></div></div>
+        <div class="esum">Came to DCH to run a youth residential program and expand my healthcare experience beyond behavioral health. Led operations across a 20-youth residential facility — scheduling, staffing, reporting, compliance, and ILS programming — while building skills in youth services, family coordination, and multi-agency case management. Zero audit findings across the full tenure.</div>
+        <div class="ecols">
+          <div class="ecol"><div class="eclbl">Operations &amp; Program Management</div>
+            <div class="ebul"><span class="edot"></span>ILS programming across multiple treatment tracks — life skills, community integration, independent living</div>
+            <div class="ebul"><span class="edot"></span>Run 15+ multidisciplinary meetings weekly — agenda, facilitation, follow-up</div>
+            <div class="ebul"><span class="edot"></span>Primary liaison between clinical staff, families, and 2+ external providers</div>
+            <div class="ebul"><span class="edot"></span>Monthly performance reporting to clinical director and leadership</div>
+          </div>
+          <div class="ecol"><div class="eclbl">Compliance, Reporting &amp; Training</div>
+            <div class="ebul"><span class="edot"></span>100% compliance across 15+ active EMR cases — no audit findings, not once</div>
+            <div class="ebul"><span class="edot"></span>Weekly KPI reporting on outcomes, attendance, and compliance</div>
+            <div class="ebul"><span class="edot"></span>Managed program scheduling and staffing resources across 20-client caseload — no coverage gaps across full tenure</div>
+            <div class="ebul"><span class="edot"></span>Hired and trained 8+ staff — curriculum, onboarding, and completion tracking</div>
+            <div class="ebul"><span class="edot"></span>Built risk flags into the weekly cycle — issues escalated before they hit compliance</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ec f">
+        <div class="eh"><div class="ehl"><div class="ebg">PREV</div><div><div class="et">Program Manager, Recreational Therapy</div><div class="eo">Mountain Springs Recovery</div></div></div><div class="emeta"><span class="eloc">Denver, CO</span><span class="edates">Q1 2022 – Apr 2023</span></div></div>
+        <div class="esum">This was a build-from-scratch role. I came in with no existing rec therapy program, no reporting infrastructure, and a cross-functional team of 9+ with no defined structure. I built the track, hired and trained the staff, wrote the clinical guidelines, and applied Six Sigma to the intake and scheduling process that was costing us admissions every month.</div>
+        <div class="ecols">
+          <div class="ecol"><div class="eclbl">Recruiting, Training &amp; Curriculum</div>
+            <div class="ebul"><span class="edot"></span>Recruited the full rec therapy team — job scoping, screening, and hiring decisions</div>
+            <div class="ebul"><span class="edot"></span>Built training materials, ran onboarding, iterated based on clinical feedback</div>
+            <div class="ebul"><span class="edot"></span>Weekly individual supervisions — session review and documented clinical feedback</div>
+            <div class="ebul"><span class="edot"></span>Observed live sessions regularly to ensure program fidelity</div>
+            <div class="ebul"><span class="edot"></span>Authored clinical guidelines across all three treatment tracks</div>
+          </div>
+          <div class="ecol"><div class="eclbl">Clinical Coordination &amp; Compliance</div>
+            <div class="ebul"><span class="edot"></span>DMAIC project on intake and scheduling — conflicts 28%→13%, admissions +15%</div>
+            <div class="ebul"><span class="edot"></span>Rec therapy track drove satisfaction from 47% to 86% over eight months</div>
+            <div class="ebul"><span class="edot"></span>Managed a team of 9+ across clinical, ops, and admin — different priorities, one program</div>
+            <div class="ebul"><span class="edot"></span>Clean audits across the full program — zero compliance findings from start to finish</div>
+            <div class="ebul"><span class="edot"></span>Built Power BI dashboard — reporting time from 3–4 hrs to under 30 min</div>
+            <div class="ebul"><span class="edot"></span>Managed program resource allocation across staffing, scheduling, and supply budget for a 9-person team</div>
+            <div class="ebul"><span class="edot"></span>Built RACI and escalation framework — resolved cross-team ownership gaps</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ec f">
+        <div class="eh"><div class="ehl"><div class="ebg" style="background:var(--bgl);border-color:rgba(59,130,246,.2);color:var(--blue)">2021</div><div><div class="et">Lead Therapist &amp; Clinical Coordinator</div><div class="eo">Tampa Community Hospital</div></div></div><div class="emeta"><span class="eloc">Tampa, FL</span><span class="edates">Jan 2021 – Dec 2021</span></div></div>
+        <div class="esum">My first role out of school, in an acute care hospital. Fast, high-volume, and a good place to learn that clinical operations don't slow down for anyone. Cross-departmental scheduling, EHR compliance, and performance reporting with no room for error.</div>
+        <div class="ecols">
+          <div class="ecol"><div class="eclbl">Coordination &amp; Scheduling</div>
+            <div class="ebul"><span class="edot"></span>Coordinated therapy scheduling across multidisciplinary teams</div>
+            <div class="ebul"><span class="edot"></span>Kept communication moving across departments in a high-volume hospital environment</div>
+            <div class="ebul"><span class="edot"></span>Balanced scheduling conflicts across departments — no cancelled sessions</div>
+          </div>
+          <div class="ecol"><div class="eclbl">Documentation &amp; Reporting</div>
+            <div class="ebul"><span class="edot"></span>Maintained 100% EHR compliance across multiple departments</div>
+            <div class="ebul"><span class="edot"></span>Prepared performance reports used in treatment planning and oversight</div>
+            <div class="ebul"><span class="edot"></span>Up to speed on hospital protocols and regulatory standards within first weeks</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ec f">
+        <div class="eh"><div class="ehl"><div class="ebg" style="background:var(--pgl);border-color:rgba(139,92,246,.3);color:var(--pur)">INTERNSHIP</div><div><div class="et">Recreation Program Coordinator</div><div class="eo">Friends House Retirement Community</div></div></div><div class="emeta"><span class="eloc">Rockville, MD</span><span class="edates">Summer 2020</span></div></div>
+        <div class="esum">What started as a summer internship turned into a crisis response. When COVID hit and the facility locked down, I built a remote programming model from nothing — no infrastructure, no precedent — and kept 20 residents engaged through mandatory isolation.</div>
+        <div class="ecols">
+          <div class="ecol"><div class="eclbl">Virtual Program Design</div>
+            <div class="ebul"><span class="edot"></span>Built a remote programming model from scratch — no prior infrastructure</div>
+            <div class="ebul"><span class="edot"></span>Virtual programming for 20 residents across varying ability levels</div>
+            <div class="ebul"><span class="edot"></span>Wellbeing scores up 20% during facility-wide lockdown</div>
+          </div>
+          <div class="ecol"><div class="eclbl">Documentation &amp; Compliance</div>
+            <div class="ebul"><span class="edot"></span>Co-authored COVID Recreation Services Manual — reusable operational playbook</div>
+            <div class="ebul"><span class="edot"></span>Set up weekly reporting workflows to track engagement and wellbeing</div>
+            <div class="ebul"><span class="edot"></span>100% documentation compliance throughout — no gaps</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="wrap">
+    <div class="f"><span class="lbl">My Story</span><h2>A bit of background.</h2><div class="rule"></div></div>
+    <div class="ag f">
+      <div>
+        <p class="ap">I started in recreational therapy and ended up running programs — mostly because I kept noticing things that weren't working and figuring out how to fix them. Scheduling gaps, reporting that didn't exist, staff without clear direction — those are the kinds of problems I'd end up fixing.</p>
+        <p class="ap">At Mountain Springs I built the rec therapy program from nothing — hired the team, designed the curriculum, fixed the intake process, and watched satisfaction go from 47% to 86% in eight months. I moved to Denver Children's Home intentionally — to run a youth program, get hands-on experience in residential care, and broaden my background across a different part of healthcare. It added a dimension that MSR didn't have: working directly with youth in a high-needs environment, managing independent living programming, and navigating the coordination between clinical teams, families, and outside agencies.</p>
+        <p class="ap">Healthcare doesn't leave much room for error — a missed compliance deadline, a gap in the schedule, a staff member who wasn't properly onboarded. Working in that environment for five years built habits that transfer directly: structured reporting, clear ownership, and the ability to keep a program running cleanly under pressure. The setting is different in corporate environments. The problems aren't.</p>
+        <div class="atags"><span class="atag">Denver, CO</span><span class="atag">Remote &amp; Hybrid OK</span><span class="atag">Full-Time</span><span class="atag">Healthcare · Corporate · PMO · Program Ops</span></div>
+        <p style="font-size:.78rem;color:var(--sub);margin-top:14px">The tools below are interactive — built from real programs. ↓</p>
+      </div>
+      <div>
+        <div class="sb">
+          <div class="sbr"><div class="sbl">Phone</div><div class="sbv b"><a href="tel:7206333302">(720) 633-3302</a></div></div>
+          <div class="sbr"><div class="sbl">Email</div><div class="sbv b"><a href="mailto:kayleegassen@gmail.com">kayleegassen@gmail.com</a></div></div>
+          <div class="sbr"><div class="sbl">Location</div><div class="sbv">Denver, CO · Remote / Hybrid OK</div></div>
+          <div class="sbr"><div class="sbl">LinkedIn</div><div class="sbv b"><a href="https://linkedin.com/in/kaylee-gassen" target="_blank" rel="noopener noreferrer">linkedin.com/in/kaylee-gassen</a></div></div>
+          <div class="sbr"><div class="sbl">Analytics</div><div class="sbv">Power BI · DAX · Excel · Data Visualization</div></div>
+          <div class="sbr"><div class="sbl">PM Tools</div><div class="sbv">Monday.com · Microsoft Teams · Google Workspace</div></div>
+          <div class="sbr"><div class="sbl">Scope</div><div class="sbv">Behavioral health · Youth residential · Independent living</div></div>
+          <div class="sbr"><div class="sbl">Targeting</div><div class="sbv b">Senior PM / Program Manager Roles</div></div>
+          <div class="sbr"><div class="sbl">Certifications</div><div class="sbv">Six Sigma Black Belt (AIGPE) · PMP in progress</div></div>
+          <div class="sbr"><div class="sbl">Status</div><div class="sbv g">Open to opportunities</div></div>
         </div>
       </div>
     </div>
@@ -667,29 +622,32 @@ footer{border-top:1px solid var(--b0);padding:22px 0}
 <!-- PROJECTS & TOOLS -->
 <section id="tools">
   <div class="wrap">
-    <div class="f"><span class="lbl">Projects &amp; Tools Built</span><h2>Everything live — click a tab below.</h2><div class="rule"></div>
-      <p style="font-size:.84rem;color:var(--sub);max-width:580px;margin-bottom:24px">Each tool is built directly into this page — no downloads or redirects needed.</p>
+    <div class="f"><span class="lbl">Projects &amp; Tools Built</span><h2>Tools built for real programs.</h2><div class="rule"></div>
+      <p style="font-size:.84rem;color:var(--sub);max-width:620px;margin-bottom:28px">Each one started as a real operational problem. Click a tab to try them.</p>
     </div>
     <div class="tool-tabs f">
-      <button class="ttab active" data-tab="dash" onclick="switchTab('dash')">📊 Analytics Dashboard</button>
-      <button class="ttab" data-tab="dmaic" onclick="switchTab('dmaic')">📈 DMAIC Case Study</button>
-      <button class="ttab" data-tab="notes" onclick="switchTab('notes')">📝 Notes Formatter</button>
-      <button class="ttab" data-tab="tmpl" onclick="switchTab('tmpl')">📋 PM Templates</button>
-      <button class="ttab" data-tab="gantt" onclick="switchTab('gantt')">📅 Career Timeline</button>
+      <button class="ttab active" data-tab="dash" onclick="switchTab('dash')">Analytics Dashboard</button>
+      <button class="ttab" data-tab="dmaic" onclick="switchTab('dmaic')">DMAIC Case Study</button>
+      <button class="ttab" data-tab="notes" onclick="switchTab('notes')">Notes Formatter</button>
+      <button class="ttab" data-tab="tmpl" onclick="switchTab('tmpl')">PM Templates</button>
+      <button class="ttab" data-tab="staff" onclick="switchTab('staff')">Staff Training Tracker</button>
+      <button class="ttab" data-tab="gantt" onclick="switchTab('gantt')">Program Status Report</button>
     </div>
 
     <!-- ANALYTICS DASHBOARD -->
     <div class="tpanel active" id="tab-dash">
-      <div style="background:var(--bg0);border:1px solid var(--b0);border-radius:var(--r);padding:12px 16px;margin-bottom:16px;display:flex;align-items:center;gap:10px">
-        <span style="font-size:.9rem">📊</span>
-        <div><div style="font-size:.78rem;font-weight:500">Behavioral Health Operations Dashboard</div><div style="font-size:.7rem;color:var(--dim)">Interactive KPI visualization · Real operational data from Mountain Springs Recovery program · 2022–2023</div></div>
+      <div class="panel-info" style="display:flex;align-items:center;gap:12px">
+        <div>
+          <div class="panel-info-title">Behavioral Health Operations Dashboard</div>
+          <div class="panel-info-sub">Interactive KPI visualization · Real operational data from Mountain Springs Recovery · 2022–2023</div>
+        </div>
       </div>
       <div class="dkpi-row">
         <div class="dkpi" style="border-left-color:#10b981"><div class="dkpi-l">Compliance Rate</div><div class="dkpi-v" style="color:#10b981">100%</div><div class="dkpi-s">▲ All-time clean record</div></div>
-        <div class="dkpi" style="border-left-color:#3b82f6"><div class="dkpi-l">Active Clients</div><div class="dkpi-v" style="color:#3b82f6">40</div><div class="dkpi-s">▲ +43% vs program start</div></div>
+        <div class="dkpi" style="border-left-color:#3b82f6"><div class="dkpi-l">Peak Active Clients</div><div class="dkpi-v" style="color:#3b82f6">40</div><div class="dkpi-s">▲ +43% vs program launch</div></div>
         <div class="dkpi" style="border-left-color:#f59e0b"><div class="dkpi-l">Admissions Growth</div><div class="dkpi-v" style="color:#f59e0b">+15%</div><div class="dkpi-s">▲ Year-over-year</div></div>
         <div class="dkpi" style="border-left-color:#8b5cf6"><div class="dkpi-l">Retention Gain</div><div class="dkpi-v" style="color:#8b5cf6">+30d</div><div class="dkpi-s">▲ vs program baseline</div></div>
-        <div class="dkpi" style="border-left-color:#10b981"><div class="dkpi-l">Satisfaction Rate</div><div class="dkpi-v" style="color:#10b981">78%</div><div class="dkpi-s">▲ Up from 47% baseline</div></div>
+        <div class="dkpi" style="border-left-color:#10b981"><div class="dkpi-l">Client Satisfaction (MSR)</div><div class="dkpi-v" style="color:#10b981">86%</div><div class="dkpi-s">▲ Up from 47% at program launch</div></div>
       </div>
       <div class="dcharts">
         <div class="chart-box"><h4>Monthly Client Admissions</h4><p>Jan 2022 – Dec 2023 · Integrative Recovery vs Residential Youth</p><div class="ch"><canvas id="cAdm"></canvas></div><div class="leg"><span class="leg-i"><span class="leg-d" style="background:#3b82f6"></span>Integrative Recovery</span><span class="leg-i"><span class="leg-d" style="background:#f59e0b"></span>Residential Youth (2023)</span></div></div>
@@ -732,7 +690,7 @@ footer{border-top:1px solid var(--b0);padding:22px 0}
         <div class="d-box"><h4>SIPOC Diagram</h4>
           <table class="d-tbl"><thead><tr><th>Suppliers</th><th>Inputs</th><th>Process</th><th>Outputs</th><th>Customers</th></tr></thead>
           <tbody>
-            <tr><td>Clinical Staff</td><td>Client Referrals</td><td>Intake &amp; Scheduling</td><td>Treatment Sessions</td><td>Clients (40 active)</td></tr>
+            <tr><td>Clinical Staff</td><td>Client Referrals</td><td>Intake &amp; Scheduling</td><td>Treatment Sessions</td><td>Clients (MSR program)</td></tr>
             <tr><td>Operations Team</td><td>Staff Schedules</td><td>Service Delivery</td><td>Compliance Reports</td><td>Clinical Leadership</td></tr>
             <tr><td>Admin Department</td><td>Treatment Plans</td><td>EMR Documentation</td><td>KPI Dashboards</td><td>Compliance Officers</td></tr>
             <tr><td>External Providers</td><td>Compliance Standards</td><td>Performance Reporting</td><td>Leadership Updates</td><td>Families &amp; Providers</td></tr>
@@ -756,10 +714,10 @@ footer{border-top:1px solid var(--b0);padding:22px 0}
       <div class="d-content" id="dc-A">
         <div class="d-box" style="margin-bottom:12px"><h4>Root Cause Analysis — Fishbone Diagram</h4><p style="margin-bottom:14px;font-size:.82rem;color:var(--sub)">Effect: Scheduling conflicts and compliance documentation gaps across program operations</p>
           <div class="fb-grid">
-            <div class="fb-cell"><div class="fb-ct" style="color:#8b5cf6">👤 People</div><div class="fb-c">Unclear role boundaries between clinical and operations staff</div><div class="fb-c">Ad-hoc handoffs with no standardized communication format</div><div class="fb-c">High staff turnover creating recurring knowledge gaps</div></div>
-            <div class="fb-cell"><div class="fb-ct" style="color:#3b82f6">⚙️ Process</div><div class="fb-c">No documented scheduling SOPs or escalation procedures</div><div class="fb-c">Inconsistent weekly meeting cadence across departments</div><div class="fb-c">No standardized handoff protocol between shifts</div></div>
-            <div class="fb-cell"><div class="fb-ct" style="color:#10b981">💻 Systems</div><div class="fb-c">Scheduling and EMR systems completely disconnected</div><div class="fb-c">No centralized reporting dashboard for leadership visibility</div><div class="fb-c">Manual data entry duplicated across 3 platforms</div></div>
-            <div class="fb-cell"><div class="fb-ct" style="color:#f59e0b">📊 Data &amp; Reporting</div><div class="fb-c">No established KPI baselines or performance benchmarks</div><div class="fb-c">Manual reporting consuming 3–4 hours weekly</div><div class="fb-c">Leadership decisions made without real-time data access</div></div>
+            <div class="fb-cell"><div class="fb-ct" style="color:#8b5cf6">People</div><div class="fb-c">Unclear role boundaries between clinical and operations staff</div><div class="fb-c">Ad-hoc handoffs with no standardized communication format</div><div class="fb-c">High staff turnover creating recurring knowledge gaps</div></div>
+            <div class="fb-cell"><div class="fb-ct" style="color:#3b82f6">Process</div><div class="fb-c">No documented scheduling SOPs or escalation procedures</div><div class="fb-c">Inconsistent weekly meeting cadence across departments</div><div class="fb-c">No standardized handoff protocol between shifts</div></div>
+            <div class="fb-cell"><div class="fb-ct" style="color:#10b981">Systems</div><div class="fb-c">Scheduling and EMR systems completely disconnected</div><div class="fb-c">No centralized reporting dashboard for leadership visibility</div><div class="fb-c">Manual data entry duplicated across 3 platforms</div></div>
+            <div class="fb-cell"><div class="fb-ct" style="color:#f59e0b">Data &amp; Reporting</div><div class="fb-c">No established KPI baselines or performance benchmarks</div><div class="fb-c">Manual reporting consuming 3–4 hours weekly</div><div class="fb-c">Leadership decisions made without real-time data access</div></div>
           </div>
         </div>
       </div>
@@ -778,8 +736,8 @@ footer{border-top:1px solid var(--b0);padding:22px 0}
           <div class="d-metrics" style="margin-top:12px">
             <div class="dm"><div style="font-size:.68rem;color:var(--dim);margin-bottom:6px">Scheduling Conflicts</div><div style="display:flex;align-items:center;justify-content:center;gap:6px"><span class="dm-b">28%</span><span class="dm-arr">→</span><span class="dm-a">13%</span></div><div class="dm-l">−15 percentage points</div></div>
             <div class="dm"><div style="font-size:.68rem;color:var(--dim);margin-bottom:6px">Documentation</div><div style="display:flex;align-items:center;justify-content:center;gap:6px"><span class="dm-b">94%</span><span class="dm-arr">→</span><span class="dm-a">100%</span></div><div class="dm-l">Zero findings achieved</div></div>
-            <div class="dm"><div style="font-size:.68rem;color:var(--dim);margin-bottom:6px">Monthly Admissions</div><div style="display:flex;align-items:center;justify-content:center;gap:6px"><span class="dm-b">28</span><span class="dm-arr">→</span><span class="dm-a">40</span></div><div class="dm-l">+43% total increase</div></div>
-            <div class="dm"><div style="font-size:.68rem;color:var(--dim);margin-bottom:6px">Report Generation</div><div style="display:flex;align-items:center;justify-content:center;gap:6px"><span class="dm-b">4hr</span><span class="dm-arr">→</span><span class="dm-a">30m</span></div><div class="dm-l">87% time reduction</div></div>
+            <div class="dm"><div style="font-size:.68rem;color:var(--dim);margin-bottom:6px">Monthly Admissions</div><div style="display:flex;align-items:center;justify-content:center;gap:6px"><span class="dm-b">28</span><span class="dm-arr">→</span><span class="dm-a">40</span></div><div class="dm-l">+43% total · +15% YoY</div></div>
+            <div class="dm"><div style="font-size:.68rem;color:var(--dim);margin-bottom:6px">Report Generation</div><div style="display:flex;align-items:center;justify-content:center;gap:6px"><span class="dm-b">3–4hr</span><span class="dm-arr">→</span><span class="dm-a">30m</span></div><div class="dm-l">87% time reduction</div></div>
           </div>
         </div>
         <div class="d-box"><h4>Final Results</h4>
@@ -788,7 +746,7 @@ footer{border-top:1px solid var(--b0);padding:22px 0}
             <div class="rm"><div class="rm-n">+30d</div><div class="rm-l">Client retention gain</div></div>
             <div class="rm"><div class="rm-n" style="color:var(--blue)">0</div><div class="rm-l">Compliance findings</div></div>
             <div class="rm"><div class="rm-n">87%</div><div class="rm-l">Reporting time reduced</div></div>
-            <div class="rm"><div class="rm-n">40</div><div class="rm-l">Peak clients served</div></div>
+            <div class="rm"><div class="rm-n">40</div><div class="rm-l">Peak clients served at MSR</div></div>
           </div>
         </div>
       </div>
@@ -796,9 +754,9 @@ footer{border-top:1px solid var(--b0);padding:22px 0}
 
     <!-- NOTES FORMATTER -->
     <div class="tpanel" id="tab-notes">
-      <div style="background:var(--bg0);border:1px solid var(--b0);border-radius:var(--r);padding:14px 18px;margin-bottom:16px;display:flex;align-items:flex-start;gap:10px">
-        <span style="font-size:1.1rem">📝</span>
-        <div><div style="font-size:.82rem;font-weight:500;margin-bottom:3px">Structured Meeting Notes Formatter</div><p style="font-size:.76rem;color:var(--sub);line-height:1.6">Paste raw meeting notes and click Format — the tool parses them into structured action items, decisions, attendees, and follow-ups. Works best with notes that include names, tasks, and due dates.</p></div>
+      <div class="panel-info">
+        <div class="panel-info-title">Structured Meeting Notes Formatter</div>
+        <p class="panel-info-sub">Paste raw meeting notes and click Format — the tool parses them into structured action items, decisions, attendees, and follow-ups. Works best with notes that include names, tasks, and due dates.</p>
       </div>
       <div class="nf-wrap">
         <div class="nf-panel">
@@ -806,34 +764,37 @@ footer{border-top:1px solid var(--b0);padding:22px 0}
           <select class="nf-sel" id="nf-type"><option value="">Select meeting type...</option><option>Weekly Team Meeting</option><option>Supervision Session</option><option>Family Meeting</option><option>Care Coordination</option><option>Leadership / Admin</option><option>Project Kickoff</option><option>Stakeholder Update</option></select>
           <textarea class="nf-ta" id="nf-notes" placeholder="Paste your raw meeting notes here...&#10;&#10;Include names, tasks, and deadlines for best results.&#10;Click 'Load Example' to see a sample."></textarea>
           <div style="display:flex;gap:8px;margin-top:10px;flex-wrap:wrap">
-            <button class="btn btn-blue btn-sm" onclick="formatNotes()">📋 Format Notes</button>
+            <button class="btn btn-blue btn-sm" onclick="formatNotes()">Format Notes</button>
             <button class="btn btn-ghost btn-sm" onclick="clearNF()">Clear</button>
           </div>
           <p class="nf-hint">Names + "will" / "needs to" / "agreed to" → action items<br>"Decided" / "approved" / "confirmed" → decisions</p>
         </div>
         <div class="nf-panel">
           <div class="nf-title">Formatted Output<button class="xcopy" id="nf-copy-btn" onclick="copyNFOut()" style="display:none">Copy All</button></div>
-          <div class="nf-out" id="nf-out"><div class="nf-ph"><span style="font-size:2rem">📋</span>Paste notes and click<br><strong style="color:var(--txt)">Format Notes</strong></div></div>
+          <div class="nf-out" id="nf-out"><div class="nf-ph">Paste notes and click<br><strong style="color:var(--txt)">Format Notes</strong></div></div>
         </div>
       </div>
     </div>
 
     <!-- TEMPLATES -->
     <div class="tpanel" id="tab-tmpl">
-      <div style="background:var(--bg0);border:1px solid var(--b0);border-radius:var(--r);padding:16px 20px;margin-bottom:16px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px">
-        <div><div style="font-size:.88rem;font-weight:600;margin-bottom:3px">Healthcare PM Template Library</div><p style="font-size:.78rem;color:var(--sub)">Select a template, fill in the white fields, then click Print to save as PDF.</p></div>
+      <div class="panel-info" style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px">
+        <div>
+          <div class="panel-info-title">Healthcare PM Template Library</div>
+          <p class="panel-info-sub">Select a template, fill in the white fields, then click Export PDF to save.</p>
+        </div>
         <div style="font-size:.68rem;color:var(--dim)">← Swipe tables sideways on mobile</div>
       </div>
       <div class="tmpl-tabs">
-        <button class="tmpl-tab active" onclick="switchTmpl('charter')">📄 Project Charter</button>
-        <button class="tmpl-tab" onclick="switchTmpl('risk')">⚠️ Risk Register</button>
-        <button class="tmpl-tab" onclick="switchTmpl('raci')">👥 RACI Matrix</button>
-        <button class="tmpl-tab" onclick="switchTmpl('kpi')">📊 KPI Tracker</button>
-        <button class="tmpl-tab" onclick="switchTmpl('dmaic-tmpl')">🔄 DMAIC Template</button>
+        <button class="tmpl-tab active" onclick="switchTmpl('charter',this)">Project Charter</button>
+        <button class="tmpl-tab" onclick="switchTmpl('risk',this)">Risk Register</button>
+        <button class="tmpl-tab" onclick="switchTmpl('raci',this)">RACI Matrix</button>
+        <button class="tmpl-tab" onclick="switchTmpl('kpi',this)">KPI Tracker</button>
+        <button class="tmpl-tab" onclick="switchTmpl('dmaic-tmpl',this)">DMAIC Template</button>
       </div>
       <!-- PROJECT CHARTER -->
       <div class="tmpl-panel active" id="tmpl-charter">
-        <div class="sheet-bar"><div class="sheet-bar-l">Project Charter <span>Healthcare Operations · Kaylee Gassen</span></div><div class="sheet-bar-r"><button class="btn btn-ghost btn-xs" onclick="location.reload()">Reset</button><button class="btn btn-blue btn-xs" onclick="printTmpl('charter','Project Charter')">🖨 Print / PDF</button></div></div>
+        <div class="sheet-bar"><div class="sheet-bar-l">Project Charter <span>Healthcare Operations · Kaylee Gassen</span></div><div class="sheet-bar-r"><button class="btn btn-ghost btn-xs" onclick="location.reload()">Reset</button><button class="btn btn-blue btn-xs" onclick="printTmpl('charter','Project Charter')">Export PDF</button></div></div>
         <div class="tbl-hint">← Swipe left/right to see all fields →</div>
         <div class="tbl-scroll" id="sheet-charter"><table class="sht">
           <tr><td colspan="2" class="sh-section">PROJECT OVERVIEW</td></tr>
@@ -863,7 +824,7 @@ footer{border-top:1px solid var(--b0);padding:22px 0}
       </div>
       <!-- RISK REGISTER -->
       <div class="tmpl-panel" id="tmpl-risk">
-        <div class="sheet-bar"><div class="sheet-bar-l">Risk Register <span>Score = Likelihood × Impact</span></div><div class="sheet-bar-r"><button class="btn btn-ghost btn-xs" onclick="location.reload()">Reset</button><button class="btn btn-blue btn-xs" onclick="printTmpl('risk','Risk Register')">🖨 Print / PDF</button></div></div>
+        <div class="sheet-bar"><div class="sheet-bar-l">Risk Register <span>Score = Likelihood × Impact</span></div><div class="sheet-bar-r"><button class="btn btn-ghost btn-xs" onclick="location.reload()">Reset</button><button class="btn btn-blue btn-xs" onclick="printTmpl('risk','Risk Register')">Export PDF</button></div></div>
         <div class="tbl-hint">← Swipe left/right to see all columns →</div>
         <div class="tbl-scroll" id="sheet-risk"><table class="sht" style="min-width:900px">
           <thead><tr><th>ID</th><th>Risk Description</th><th>Category</th><th>Likelihood (1–5)</th><th>Impact (1–5)</th><th>Score</th><th>Level</th><th>Mitigation Strategy</th><th>Owner</th></tr></thead>
@@ -881,7 +842,7 @@ footer{border-top:1px solid var(--b0);padding:22px 0}
       </div>
       <!-- RACI -->
       <div class="tmpl-panel" id="tmpl-raci">
-        <div class="sheet-bar"><div class="sheet-bar-l">RACI Matrix <span>R=Responsible · A=Accountable · C=Consulted · I=Informed</span></div><div class="sheet-bar-r"><button class="btn btn-ghost btn-xs" onclick="location.reload()">Reset</button><button class="btn btn-blue btn-xs" onclick="printTmpl('raci','RACI Matrix')">🖨 Print / PDF</button></div></div>
+        <div class="sheet-bar"><div class="sheet-bar-l">RACI Matrix <span>R=Responsible · A=Accountable · C=Consulted · I=Informed</span></div><div class="sheet-bar-r"><button class="btn btn-ghost btn-xs" onclick="location.reload()">Reset</button><button class="btn btn-blue btn-xs" onclick="printTmpl('raci','RACI Matrix')">Export PDF</button></div></div>
         <div class="tbl-hint">← Swipe left/right to see all columns →</div>
         <div class="tbl-scroll" id="sheet-raci"><table class="sht" style="min-width:800px">
           <thead><tr><th style="min-width:180px">Task / Activity</th><th>Program Manager</th><th>Clinical Lead</th><th>Ops Director</th><th>Compliance Officer</th><th>HR</th><th>External Providers</th><th>Exec Sponsor</th></tr></thead>
@@ -906,7 +867,7 @@ footer{border-top:1px solid var(--b0);padding:22px 0}
       </div>
       <!-- KPI TRACKER -->
       <div class="tmpl-panel" id="tmpl-kpi">
-        <div class="sheet-bar"><div class="sheet-bar-l">Weekly KPI Tracker <span>Update every Monday</span></div><div class="sheet-bar-r"><button class="btn btn-ghost btn-xs" onclick="location.reload()">Reset</button><button class="btn btn-blue btn-xs" onclick="printTmpl('kpi','Weekly KPI Tracker')">🖨 Print / PDF</button></div></div>
+        <div class="sheet-bar"><div class="sheet-bar-l">Weekly KPI Tracker <span>Update every Monday</span></div><div class="sheet-bar-r"><button class="btn btn-ghost btn-xs" onclick="location.reload()">Reset</button><button class="btn btn-blue btn-xs" onclick="printTmpl('kpi','Weekly KPI Tracker')">Export PDF</button></div></div>
         <div class="tbl-hint">← Swipe left/right to see all columns →</div>
         <div class="tbl-scroll" id="sheet-kpi"><table class="sht" style="min-width:680px">
           <thead><tr><th>KPI</th><th>Description</th><th>This Week</th><th>Target</th><th>Notes</th></tr></thead>
@@ -914,7 +875,7 @@ footer{border-top:1px solid var(--b0);padding:22px 0}
             <tr><td colspan="5" class="kpi-cat">CLIENT &amp; PROGRAM METRICS</td></tr>
             <tr><td class="shl">Active Clients</td><td class="shv"># currently enrolled</td><td class="kpi-on" contenteditable="true">40</td><td class="shl sh-center">Higher is better</td><td class="shv" contenteditable="true">At capacity</td></tr>
             <tr><td class="shl">Admissions This Week</td><td class="shv">New client intakes</td><td class="shv sh-center" contenteditable="true">6</td><td class="shl sh-center">Track volume</td><td class="shv" contenteditable="true"></td></tr>
-            <tr><td class="shl">Client Satisfaction Rate</td><td class="shv">% positive reviews/feedback</td><td class="kpi-on" contenteditable="true">78%</td><td class="shl sh-center">≥75%</td><td class="shv" contenteditable="true">Up from 47% baseline</td></tr>
+            <tr><td class="shl">Client Satisfaction Rate</td><td class="shv">% positive reviews/feedback</td><td class="kpi-on" contenteditable="true">86%</td><td class="shl sh-center">≥75%</td><td class="shv" contenteditable="true">Up from 47% baseline</td></tr>
             <tr><td class="shl">Client Retention Rate</td><td class="shv">% remaining from prior month</td><td class="kpi-on" contenteditable="true">95%</td><td class="shl sh-center">≥90%</td><td class="shv" contenteditable="true">Target met</td></tr>
             <tr><td colspan="5" class="kpi-cat">COMPLIANCE &amp; DOCUMENTATION</td></tr>
             <tr><td class="shl">EMR Documentation Rate</td><td class="shv">% cases with complete notes</td><td class="kpi-on" contenteditable="true">100%</td><td class="shl sh-center">100%</td><td class="shv" contenteditable="true">Zero backlog</td></tr>
@@ -931,7 +892,7 @@ footer{border-top:1px solid var(--b0);padding:22px 0}
       </div>
       <!-- DMAIC TEMPLATE -->
       <div class="tmpl-panel" id="tmpl-dmaic-tmpl">
-        <div class="sheet-bar"><div class="sheet-bar-l">DMAIC Project Template <span>Six Sigma Black Belt (AIGPE)</span></div><div class="sheet-bar-r"><button class="btn btn-ghost btn-xs" onclick="location.reload()">Reset</button><button class="btn btn-blue btn-xs" onclick="printTmpl('dmaic-tmpl','DMAIC Template')">🖨 Print / PDF</button></div></div>
+        <div class="sheet-bar"><div class="sheet-bar-l">DMAIC Project Template <span>Six Sigma Black Belt (AIGPE)</span></div><div class="sheet-bar-r"><button class="btn btn-ghost btn-xs" onclick="location.reload()">Reset</button><button class="btn btn-blue btn-xs" onclick="printTmpl('dmaic-tmpl','DMAIC Template')">Export PDF</button></div></div>
         <div class="tbl-hint">← Swipe left/right →</div>
         <div class="tbl-scroll" id="sheet-dmaic-tmpl"><table class="sht">
           <tr><td class="shl">Project Name</td><td colspan="3"><div class="shv" contenteditable="true" data-ph="Enter project name"></div></td></tr>
@@ -959,109 +920,503 @@ footer{border-top:1px solid var(--b0);padding:22px 0}
       </div>
     </div>
 
-    <!-- CAREER TIMELINE / GANTT -->
-    <div class="tpanel" id="tab-gantt">
-      <div style="background:var(--bg0);border:1px solid var(--b0);border-radius:var(--r);padding:16px 20px;margin-bottom:20px">
-        <div style="font-size:.88rem;font-weight:600;margin-bottom:3px">Career &amp; Project Timeline</div>
-        <p style="font-size:.78rem;color:var(--sub)">5+ years of healthcare program management — roles, milestones, and key deliverables from 2020 to present.</p>
+    <!-- STAFF TRAINING & SUPERVISION TRACKER -->
+    <div class="tpanel" id="tab-staff">
+      <div class="panel-info" style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px">
+        <div>
+          <div class="panel-info-title">Staff Training &amp; Supervision Tracker</div>
+          <p class="panel-info-sub">Built from the supervision and curriculum system used at Mountain Springs Recovery. Track staff members, training modules, supervision sessions, and competency sign-offs in one view.</p>
+        </div>
+        <button onclick="exportStaffPDF()" class="btn btn-ghost" style="font-size:.75rem;padding:7px 14px">Export PDF</button>
       </div>
-      <div class="gantt-wrap">
-        <div class="gantt-inner">
-          <div style="display:flex;padding-left:200px;margin-bottom:8px">
-            <div style="flex:1;display:flex;justify-content:space-between">
-              <span style="font-size:.65rem;color:var(--dim);font-family:var(--mono)">2020</span>
-              <span style="font-size:.65rem;color:var(--dim);font-family:var(--mono)">2021</span>
-              <span style="font-size:.65rem;color:var(--dim);font-family:var(--mono)">2022</span>
-              <span style="font-size:.65rem;color:var(--dim);font-family:var(--mono)">2023</span>
-              <span style="font-size:.65rem;color:var(--dim);font-family:var(--mono)">2024</span>
-              <span style="font-size:.65rem;color:var(--dim);font-family:var(--mono)">2025</span>
-              <span style="font-size:.65rem;color:var(--dim);font-family:var(--mono)">Now</span>
-            </div>
+
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:16px">
+        <div style="background:var(--bg0);border:1px solid var(--b0);border-radius:var(--r);padding:16px">
+          <div style="font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:var(--blue);font-weight:500;margin-bottom:10px">Add Staff Member</div>
+          <div style="display:flex;flex-direction:column;gap:8px">
+            <input id="sf-name" type="text" placeholder="Full name" class="sf-input">
+            <input id="sf-role" type="text" placeholder="Role / position" class="sf-input">
+            <input id="sf-start" type="date" class="sf-input">
+            <button onclick="addStaffMember()" class="btn btn-blue" style="width:100%;justify-content:center">+ Add Staff Member</button>
           </div>
-          <div style="height:1px;background:var(--b0);margin-bottom:12px;margin-left:200px"></div>
-          <!-- Long-Term Care: Jan 2020 - Dec 2021 = 0-31.6% of 76mo total -->
-          <div class="gantt-row">
-            <div class="gantt-label"><strong>Long-Term Care</strong>COVID-19 Virtual Program</div>
-            <div class="gantt-track">
-              <div class="gantt-bar" style="left:0%;width:31.6%;background:linear-gradient(90deg,#8b5cf6,#6d28d9)">Virtual Program Launch</div>
-              <div class="gantt-ms" style="left:30.3%;background:#c084fc" title="COVID Services Manual Published"></div>
-            </div>
-          </div>
-          <!-- Tampa: Jan 2021 - Dec 2022 = 13.2-44.7% -->
-          <div class="gantt-row">
-            <div class="gantt-label"><strong>Tampa Community Hospital</strong>Lead Therapist</div>
-            <div class="gantt-track">
-              <div class="gantt-bar" style="left:13.2%;width:31.6%;background:linear-gradient(90deg,#06b6d4,#0891b2)">Lead Therapist · Acute Care</div>
-            </div>
-          </div>
-          <!-- Mountain Springs: Q1 2022 - Q4 2023 = 26.3-57.9% -->
-          <div class="gantt-row">
-            <div class="gantt-label"><strong>Mountain Springs Recovery</strong>Program Manager</div>
-            <div class="gantt-track">
-              <div class="gantt-bar" style="left:26.3%;width:31.6%;background:linear-gradient(90deg,#3b82f6,#1d4ed8)">Program Manager · 40 Clients</div>
-              <div class="gantt-ms" style="left:36.8%;background:#10b981" title="Power BI Dashboard Built"></div>
-              <div class="gantt-ms" style="left:39.5%;background:#f59e0b" title="Six Sigma Black Belt Achieved (AIGPE)"></div>
-              <div class="gantt-ms" style="left:47.4%;background:#3b82f6" title="DMAIC Implementation Complete · +15% Admissions"></div>
-            </div>
-          </div>
-          <!-- Denver Children's: Jan 2023 - Present = 36.8-100% -->
-          <div class="gantt-row">
-            <div class="gantt-label"><strong>Denver Children's Home</strong>Program Lead · Current</div>
-            <div class="gantt-track">
-              <div class="gantt-bar" style="left:36.8%;width:63.2%;background:linear-gradient(90deg,#10b981,#059669)">Program Lead Counselor · Current Role</div>
-              <div class="gantt-ms" style="left:55.3%;background:#f59e0b" title="Rec Therapy Track Created"></div>
-              <div class="gantt-ms" style="left:63.2%;background:#10b981" title="Client Satisfaction Reaches 78% (up from 47%)"></div>
-            </div>
-          </div>
-          <div style="height:1px;background:var(--b0);margin:14px 0;margin-left:200px"></div>
-          <div class="gantt-legend">
-            <div class="gantt-leg"><div class="gantt-leg-dot" style="background:#8b5cf6"></div>Long-Term Care / COVID Program</div>
-            <div class="gantt-leg"><div class="gantt-leg-dot" style="background:#06b6d4"></div>Tampa Community Hospital</div>
-            <div class="gantt-leg"><div class="gantt-leg-dot" style="background:#3b82f6"></div>Mountain Springs Recovery</div>
-            <div class="gantt-leg"><div class="gantt-leg-dot" style="background:#10b981"></div>Denver Children's Home (Current)</div>
-            <div class="gantt-leg"><div style="width:10px;height:10px;border-radius:50%;background:#f59e0b"></div>Key Milestone</div>
+        </div>
+        <div style="background:var(--bg0);border:1px solid var(--b0);border-radius:var(--r);padding:16px">
+          <div style="font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:var(--blue);font-weight:500;margin-bottom:10px">Program Summary</div>
+          <div id="sf-summary" style="display:flex;flex-direction:column;gap:8px">
+            <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--b0)"><span style="font-size:.78rem;color:var(--sub)">Total Staff</span><span id="sf-total" style="font-size:.88rem;font-weight:600">0</span></div>
+            <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--b0)"><span style="font-size:.78rem;color:var(--sub)">Fully Trained</span><span id="sf-trained" style="font-size:.88rem;font-weight:600;color:var(--grn)">0</span></div>
+            <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--b0)"><span style="font-size:.78rem;color:var(--sub)">In Progress</span><span id="sf-progress" style="font-size:.88rem;font-weight:600;color:var(--amb)">0</span></div>
+            <div style="display:flex;justify-content:space-between;padding:8px 0"><span style="font-size:.78rem;color:var(--sub)">Supervisions This Month</span><span id="sf-sups" style="font-size:.88rem;font-weight:600;color:var(--blue)">0</span></div>
           </div>
         </div>
       </div>
-      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--b0);border-radius:var(--r);overflow:hidden;margin-top:16px">
-        <div style="background:var(--bg0);padding:16px;text-align:center"><div style="font-size:1.4rem;font-weight:700;color:var(--blue);margin-bottom:3px">5+</div><div style="font-size:.68rem;color:var(--dim)">Years in healthcare operations</div></div>
-        <div style="background:var(--bg0);padding:16px;text-align:center"><div style="font-size:1.4rem;font-weight:700;color:var(--grn);margin-bottom:3px">4</div><div style="font-size:.68rem;color:var(--dim)">Organizations — all healthcare settings</div></div>
-        <div style="background:var(--bg0);padding:16px;text-align:center"><div style="font-size:1.4rem;font-weight:700;color:var(--amb);margin-bottom:3px">4</div><div style="font-size:.68rem;color:var(--dim)">Certifications earned (AIGPE + NCTRC)</div></div>
-        <div style="background:var(--bg0);padding:16px;text-align:center"><div style="font-size:1.4rem;font-weight:700;color:var(--grn);margin-bottom:3px">0</div><div style="font-size:.68rem;color:var(--dim)">Compliance findings — ever</div></div>
+
+      <div id="sf-roster" style="display:flex;flex-direction:column;gap:10px;margin-bottom:16px">
+        <!-- Staff cards rendered here by JS -->
       </div>
+      <div id="sf-empty" style="text-align:center;padding:40px 20px;color:var(--dim);font-size:.82rem;background:var(--bg0);border:1px dashed var(--b0);border-radius:var(--r)">
+        Add a staff member above to start tracking training and supervision sessions.
+      </div>
+
     </div>
 
+    <!-- CAREER TIMELINE / GANTT -->
+    <div class="tpanel" id="tab-gantt">
+      <div class="panel-info">
+        <div>
+          <div class="panel-info-title">Program Status Report</div>
+          <div class="panel-info-sub">Edit any field — this is the format used to brief leadership every week.</div>
+        </div>
+      </div>
+
+      <div class="psr-wrap">
+
+        <!-- Header row -->
+        <div class="psr-header">
+          <div class="psr-hcol">
+            <div class="psr-hlbl">Program</div>
+            <div class="psr-hval" contenteditable="true" spellcheck="false">Youth Treatment Program — DCH Residential</div>
+          </div>
+          <div class="psr-hcol">
+            <div class="psr-hlbl">Report Week</div>
+            <div class="psr-hval" contenteditable="true" spellcheck="false">Week of June 23, 2026</div>
+          </div>
+          <div class="psr-hcol">
+            <div class="psr-hlbl">Prepared By</div>
+            <div class="psr-hval" contenteditable="true" spellcheck="false">Kaylee Gassen, Program Lead</div>
+          </div>
+          <div class="psr-hcol">
+            <div class="psr-hlbl">Submitted To</div>
+            <div class="psr-hval" contenteditable="true" spellcheck="false">Clinical Director</div>
+          </div>
+        </div>
+
+        <!-- Overall status -->
+        <div class="psr-section">
+          <div class="psr-section-title">Overall Program Status</div>
+          <div class="psr-status-row">
+            <div class="psr-status-item">
+              <div class="psr-status-lbl">Schedule</div>
+              <div class="psr-status-pill psr-green" onclick="cycleStatus(this)">ON TRACK</div>
+            </div>
+            <div class="psr-status-item">
+              <div class="psr-status-lbl">Compliance</div>
+              <div class="psr-status-pill psr-green" onclick="cycleStatus(this)">ON TRACK</div>
+            </div>
+            <div class="psr-status-item">
+              <div class="psr-status-lbl">Staffing</div>
+              <div class="psr-status-pill psr-yellow" onclick="cycleStatus(this)">AT RISK</div>
+            </div>
+            <div class="psr-status-item">
+              <div class="psr-status-lbl">Budget</div>
+              <div class="psr-status-pill psr-green" onclick="cycleStatus(this)">ON TRACK</div>
+            </div>
+            <div class="psr-status-item">
+              <div class="psr-status-lbl">Client Outcomes</div>
+              <div class="psr-status-pill psr-green" onclick="cycleStatus(this)">ON TRACK</div>
+            </div>
+          </div>
+          <div class="psr-status-hint">Click any status to cycle: ON TRACK → AT RISK → OFF TRACK → ON TRACK</div>
+        </div>
+
+        <!-- KPI snapshot -->
+        <div class="psr-section">
+          <div class="psr-section-title">This Week's KPIs</div>
+          <div class="psr-kpi-grid">
+            <div class="psr-kpi">
+              <div class="psr-kpi-val" contenteditable="true" spellcheck="false">100%</div>
+              <div class="psr-kpi-lbl">Documentation compliance</div>
+              <div class="psr-kpi-note" contenteditable="true">All cases current as of Friday</div>
+            </div>
+            <div class="psr-kpi">
+              <div class="psr-kpi-val" contenteditable="true" spellcheck="false">18/20</div>
+              <div class="psr-kpi-lbl">Session attendance rate</div>
+              <div class="psr-kpi-note" contenteditable="true">2 absences — medical, documented</div>
+            </div>
+            <div class="psr-kpi">
+              <div class="psr-kpi-val" contenteditable="true" spellcheck="false">15</div>
+              <div class="psr-kpi-lbl">Multidisciplinary meetings</div>
+              <div class="psr-kpi-note" contenteditable="true">All with documented follow-up</div>
+            </div>
+            <div class="psr-kpi">
+              <div class="psr-kpi-val" contenteditable="true" spellcheck="false">0</div>
+              <div class="psr-kpi-lbl">Open compliance flags</div>
+              <div class="psr-kpi-note" contenteditable="true">No items escalated this week</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Two column: accomplishments + risks -->
+        <div class="psr-two-col">
+          <div class="psr-col-block">
+            <div class="psr-section-title">Accomplishments This Week</div>
+            <div class="psr-list" id="psr-wins">
+              <div class="psr-list-item" contenteditable="true">Completed quarterly goal reviews for all 20 active clients — summaries submitted to clinical team</div>
+              <div class="psr-list-item" contenteditable="true">New staff member completed onboarding — first solo session delivered Friday</div>
+              <div class="psr-list-item" contenteditable="true">ILS curriculum updated for Q3 — life skills module revised based on client feedback</div>
+              <div class="psr-list-item" contenteditable="true">Zero documentation exceptions on Monday audit sweep</div>
+            </div>
+            <button class="psr-add-btn" onclick="addPsrItem('psr-wins')">+ Add item</button>
+          </div>
+          <div class="psr-col-block">
+            <div class="psr-section-title">Risks &amp; Issues</div>
+            <div class="psr-list" id="psr-risks">
+              <div class="psr-risk-item">
+                <div class="psr-risk-top">
+                  <div class="psr-risk-pill psr-yellow-bg" onclick="cycleRisk(this)">MEDIUM</div>
+                  <div contenteditable="true" class="psr-risk-title">Staff coverage gap — one counselor on PTO next week</div>
+                </div>
+                <div class="psr-risk-action" contenteditable="true">Mitigation: coverage schedule confirmed, float staff requested</div>
+              </div>
+              <div class="psr-risk-item">
+                <div class="psr-risk-top">
+                  <div class="psr-risk-pill psr-red-bg" onclick="cycleRisk(this)">HIGH</div>
+                  <div contenteditable="true" class="psr-risk-title">One client Medicaid renewal overdue — 10-day window</div>
+                </div>
+                <div class="psr-risk-action" contenteditable="true">Mitigation: caseworker notified, paperwork in progress, tracking daily</div>
+              </div>
+            </div>
+            <button class="psr-add-btn" onclick="addPsrRisk()">+ Add risk</button>
+          </div>
+        </div>
+
+        <!-- Next week focus -->
+        <div class="psr-section">
+          <div class="psr-section-title">Next Week Priorities</div>
+          <div class="psr-list" id="psr-next">
+            <div class="psr-list-item" contenteditable="true">Close Medicaid renewal for client — deadline Thursday</div>
+            <div class="psr-list-item" contenteditable="true">Monthly KPI report to clinical director — due Wednesday</div>
+            <div class="psr-list-item" contenteditable="true">Supervisions with all 8 direct reports — schedule confirmed</div>
+          </div>
+          <button class="psr-add-btn" onclick="addPsrItem('psr-next')">+ Add priority</button>
+        </div>
+
+        <!-- Notes -->
+        <div class="psr-section">
+          <div class="psr-section-title">Director Notes / Escalations</div>
+          <div class="psr-notes" contenteditable="true" placeholder="Add any items requiring director attention or decision...">Medicaid renewal flagged for director awareness — if not resolved by Thursday, client placement may be affected. No director action needed yet.</div>
+        </div>
+
+        <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap">
+        <button class="psr-export-btn" onclick="exportPSR()">Export as PDF</button>
+        <button class="psr-add-btn" onclick="resetPSR()" style="padding:10px 16px">Reset to defaults</button>
+      </div>
+      </div>
+
+      <style>
+        .psr-wrap{padding:4px 0 20px}
+        .psr-header{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:20px}
+        .psr-hcol{background:var(--bg1);border:1px solid var(--b0);border-radius:var(--r);padding:12px 14px}
+        .psr-hlbl{font-size:.66rem;color:var(--sub);text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px}
+        .psr-hval{font-size:.82rem;color:var(--txt);font-weight:500;outline:none;min-height:18px}
+        .psr-hval:focus{color:var(--blue)}
+        .psr-section{background:var(--bg1);border:1px solid var(--b0);border-radius:var(--r);padding:16px 18px;margin-bottom:12px}
+        .psr-section-title{font-size:.68rem;font-weight:600;color:var(--sub);text-transform:uppercase;letter-spacing:.1em;margin-bottom:14px}
+        .psr-status-row{display:flex;gap:10px;flex-wrap:wrap}
+        .psr-status-item{display:flex;flex-direction:column;align-items:center;gap:6px;flex:1;min-width:100px}
+        .psr-status-lbl{font-size:.72rem;color:var(--sub);text-align:center}
+        .psr-status-pill{font-size:.68rem;font-weight:700;letter-spacing:.06em;padding:5px 12px;border-radius:20px;cursor:pointer;transition:opacity .15s;white-space:nowrap;user-select:none}
+        .psr-status-pill:hover{opacity:.8}
+        .psr-green{background:rgba(16,185,129,.15);color:#10b981;border:1px solid rgba(16,185,129,.3)}
+        .psr-yellow{background:rgba(245,158,11,.12);color:#f59e0b;border:1px solid rgba(245,158,11,.3)}
+        .psr-red-pill{background:rgba(239,68,68,.12);color:#ef4444;border:1px solid rgba(239,68,68,.3)}
+        .psr-status-hint{font-size:.65rem;color:var(--dim,var(--sub));margin-top:12px;text-align:center;opacity:.6}
+        .psr-kpi-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+        .psr-kpi{background:var(--bg2);border-radius:var(--r);padding:14px;border:1px solid var(--b0)}
+        .psr-kpi-val{font-size:1.5rem;font-weight:700;color:var(--blue);font-family:var(--mono);outline:none;margin-bottom:4px}
+        .psr-kpi-val:focus{color:var(--txt)}
+        .psr-kpi-lbl{font-size:.7rem;color:var(--txt);margin-bottom:6px;font-weight:500}
+        .psr-kpi-note{font-size:.66rem;color:var(--sub);outline:none;min-height:14px;line-height:1.4}
+        .psr-kpi-note:focus{color:var(--txt)}
+        .psr-two-col{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px}
+        .psr-col-block{background:var(--bg1);border:1px solid var(--b0);border-radius:var(--r);padding:16px 18px}
+        .psr-list{display:flex;flex-direction:column;gap:6px;margin-bottom:10px}
+        .psr-list-item{font-size:.78rem;color:var(--txt);padding:8px 10px 8px 26px;position:relative;outline:none;border-radius:4px;line-height:1.5;min-height:16px}
+        .psr-list-item:focus{background:var(--bg2)}
+        .psr-list-item::before{content:"•";position:absolute;left:10px;color:var(--blue);font-size:.9rem;top:7px}
+        .psr-risk-item{background:var(--bg2);border-radius:var(--r);padding:10px 12px;margin-bottom:8px;border:1px solid var(--b0)}
+        .psr-risk-top{display:flex;align-items:flex-start;gap:8px;margin-bottom:6px}
+        .psr-risk-pill{font-size:.62rem;font-weight:700;padding:3px 8px;border-radius:4px;cursor:pointer;white-space:nowrap;flex-shrink:0;margin-top:2px;user-select:none}
+        .psr-yellow-bg{background:rgba(245,158,11,.15);color:#f59e0b;border:1px solid rgba(245,158,11,.25)}
+        .psr-red-bg{background:rgba(239,68,68,.12);color:#ef4444;border:1px solid rgba(239,68,68,.25)}
+        .psr-green-bg{background:rgba(16,185,129,.12);color:#10b981;border:1px solid rgba(16,185,129,.25)}
+        .psr-risk-title{font-size:.78rem;color:var(--txt);outline:none;flex:1;line-height:1.4}
+        .psr-risk-title:focus{background:transparent}
+        .psr-risk-action{font-size:.71rem;color:var(--sub);outline:none;padding-left:2px;line-height:1.4}
+        .psr-risk-action:focus{color:var(--txt)}
+        .psr-notes{font-size:.78rem;color:var(--txt);outline:none;min-height:60px;line-height:1.6;padding:4px 2px}
+        .psr-notes:focus{color:var(--txt)}
+        .psr-notes:empty::before{content:attr(placeholder);color:var(--sub);pointer-events:none;display:block}
+        .psr-add-btn{background:none;border:1px dashed var(--b1);color:var(--sub);font-size:.7rem;padding:5px 12px;border-radius:4px;cursor:pointer;transition:all .15s;font-family:inherit}
+        .psr-add-btn:hover{border-color:var(--blue);color:var(--blue)}
+        .psr-export-btn{background:var(--blue);color:#fff;border:none;font-size:.78rem;font-weight:600;padding:10px 24px;border-radius:var(--r);cursor:pointer;font-family:inherit;margin-top:8px;transition:opacity .15s}
+        .psr-export-btn:hover{opacity:.85}
+        @media(max-width:700px){
+          .psr-header{grid-template-columns:1fr 1fr}
+          .psr-kpi-grid{grid-template-columns:1fr 1fr}
+          .psr-two-col{grid-template-columns:1fr}
+        }
+        @media(max-width:520px){
+          .psr-status-row{gap:6px}
+          .psr-status-item{min-width:80px}
+          .psr-export-btn{width:100%}
+        }
+        @media(max-width:480px){
+          .psr-header{grid-template-columns:1fr}
+          .psr-kpi-grid{grid-template-columns:1fr}
+        }
+      </style>
+
+      <script>
+        function cycleStatus(el) {
+          const states = ['ON TRACK','AT RISK','OFF TRACK'];
+          const classes = ['psr-green','psr-yellow','psr-red-pill'];
+          const cur = states.indexOf(el.textContent.trim());
+          const next = (cur + 1) % 3;
+          el.textContent = states[next];
+          el.className = 'psr-status-pill ' + classes[next];
+        }
+        function cycleRisk(el) {
+          const states = ['LOW','MEDIUM','HIGH'];
+          const classes = ['psr-green-bg','psr-yellow-bg','psr-red-bg'];
+          const cur = states.indexOf(el.textContent.trim());
+          const next = (cur + 1) % 3;
+          el.textContent = states[next];
+          el.className = 'psr-risk-pill ' + classes[next];
+        }
+        function addPsrItem(listId) {
+          const list = document.getElementById(listId);
+          const item = document.createElement('div');
+          item.className = 'psr-list-item';
+          item.contentEditable = 'true';
+          item.textContent = '';
+          list.appendChild(item);
+          item.focus();
+        }
+        function addPsrRisk() {
+          const list = document.getElementById('psr-risks');
+          const item = document.createElement('div');
+          item.className = 'psr-risk-item';
+          item.innerHTML = `
+            <div class="psr-risk-top">
+              <div class="psr-risk-pill psr-yellow-bg" onclick="cycleRisk(this)">MEDIUM</div>
+              <div contenteditable="true" class="psr-risk-title">Describe the risk...</div>
+            </div>
+            <div class="psr-risk-action" contenteditable="true">Mitigation: </div>`;
+          list.appendChild(item);
+          item.querySelector('.psr-risk-title').focus();
+        }
+        function exportPSR() {
+          const program = document.querySelector('.psr-hval').innerText;
+          const week = document.querySelectorAll('.psr-hval')[1].innerText;
+          const w = window.open('','_blank','width=900,height=700');
+          const kpis = [...document.querySelectorAll('.psr-kpi')].map(k => {
+            const val = k.querySelector('.psr-kpi-val').innerText;
+            const lbl = k.querySelector('.psr-kpi-lbl').innerText;
+            const note = k.querySelector('.psr-kpi-note').innerText;
+            return `<tr><td class="kl">${lbl}</td><td class="kv">${val}</td><td class="kn">${note}</td></tr>`;
+          }).join('');
+          const wins = [...document.querySelectorAll('#psr-wins .psr-list-item')].map(i=>`<li>${i.innerText}</li>`).join('');
+          const risks = [...document.querySelectorAll('.psr-risk-item')].map(r => {
+            const lvl = r.querySelector('.psr-risk-pill').innerText;
+            const title = r.querySelector('.psr-risk-title').innerText;
+            const action = r.querySelector('.psr-risk-action').innerText;
+            return `<tr><td class="rl ${lvl.toLowerCase()}">${lvl}</td><td>${title}</td><td>${action}</td></tr>`;
+          }).join('');
+          const next = [...document.querySelectorAll('#psr-next .psr-list-item')].map(i=>`<li>${i.innerText}</li>`).join('');
+          const notes = document.querySelector('.psr-notes').innerText;
+          const statuses = [...document.querySelectorAll('.psr-status-item')].map(s => {
+            const lbl = s.querySelector('.psr-status-lbl').innerText;
+            const pill = s.querySelector('.psr-status-pill').innerText;
+            const cls = pill === 'ON TRACK' ? 'st-g' : pill === 'AT RISK' ? 'st-y' : 'st-r';
+            return `<div class="st-item"><span>${lbl}</span><span class="${cls}">${pill}</span></div>`;
+          }).join('');
+          w.document.write(`<!DOCTYPE html><html><head><title>Program Status — ${week}</title>
+          <style>
+            body{font-family:'Segoe UI',sans-serif;font-size:11px;color:#1e293b;padding:24px;background:#fff;max-width:860px;margin:0 auto}
+            h1{font-size:17px;color:#1e3a5f;margin:0 0 2px}
+            .sub{font-size:10px;color:#64748b;margin-bottom:18px}
+            h2{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:#475569;margin:16px 0 8px;padding-bottom:4px;border-bottom:1px solid #e2e8f0}
+            table{width:100%;border-collapse:collapse;margin-bottom:14px}
+            th{background:#1e3a5f;color:#fff;font-size:9px;font-weight:600;padding:6px 10px;text-align:left;letter-spacing:.05em;text-transform:uppercase}
+            td{border:1px solid #e2e8f0;padding:7px 10px;vertical-align:top;line-height:1.4}
+            .kl{background:#f8fafc;font-weight:500;color:#475569;white-space:nowrap;width:200px}
+            .kv{font-weight:700;color:#1e3a5f;text-align:center;width:80px}
+            .kn{color:#64748b;font-size:10px}
+            .rl{font-weight:700;text-align:center;white-space:nowrap;width:70px}
+            .low{background:#d1fae5;color:#065f46}
+            .medium{background:#fef3c7;color:#92400e}
+            .high{background:#fee2e2;color:#b91c1c}
+            ul{margin:0;padding-left:18px}
+            li{margin-bottom:4px;line-height:1.5}
+            .st-row{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px}
+            .st-item{display:flex;gap:6px;align-items:center;background:#f8fafc;padding:5px 10px;border-radius:4px;border:1px solid #e2e8f0}
+            .st-item span:first-child{color:#475569;font-size:10px}
+            .st-g{background:#d1fae5;color:#065f46;font-weight:700;font-size:9px;padding:2px 7px;border-radius:3px}
+            .st-y{background:#fef3c7;color:#92400e;font-weight:700;font-size:9px;padding:2px 7px;border-radius:3px}
+            .st-r{background:#fee2e2;color:#b91c1c;font-weight:700;font-size:9px;padding:2px 7px;border-radius:3px}
+            .notes-box{background:#f8fafc;border:1px solid #e2e8f0;border-radius:4px;padding:10px 12px;line-height:1.6;color:#1e293b}
+          </style></head><body>
+          <h3>Program Status Report</h3>
+          <div class="sub">${program} · ${week} · Prepared by Kaylee Gassen, Program Lead</div>
+          <h2>Overall Status</h2>
+          <div class="st-row">${statuses}</div>
+          <h2>KPIs This Week</h2>
+          <table><tr><th>Metric</th><th>Value</th><th>Notes</th></tr>${kpis}</table>
+          <h2>Accomplishments</h2><ul>${wins}</ul>
+          <h2>Risks &amp; Issues</h2>
+          <table><tr><th>Level</th><th>Issue</th><th>Mitigation</th></tr>${risks}</table>
+          <h2>Next Week Priorities</h2><ul>${next}</ul>
+          <h2>Director Notes / Escalations</h2>
+          <div class="notes-box">${notes}</div>
+          <script>window.onload=function(){window.print()}<\/script>
+          </body></html>`);
+          w.document.close();
+        }
+
+        function resetPSR() {
+          if(!confirm('Reset all fields to the demo defaults?')) return;
+          location.reload();
+        }
+      </script>
+    </div>
   </div>
 </section>
 
 <!-- SKILLS + RADAR -->
 <section id="skills">
   <div class="wrap">
-    <div class="f"><span class="lbl">Tools &amp; Capabilities</span><h2>Skills by category.</h2><div class="rule"></div></div>
+    <div class="f"><span class="lbl">Tools &amp; Capabilities</span><h2>Skills and tools.</h2><div class="rule"></div></div>
     <div class="skills-layout f">
       <div class="radar-box">
-        <h4>Capability Radar</h4>
-        <p>Self-assessed proficiency across core PM competencies · 0–100 scale</p>
-        <div class="rch"><canvas id="cRadar"></canvas></div>
+        <h4>Competency Profile</h4>
+        <p>Five areas, each tied to a documented outcome.</p>
+        <svg viewBox="0 0 300 280" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:300px;display:block;margin:0 auto;overflow:visible">
+          <defs>
+            <style>
+              .ra-grid{fill:none;stroke:var(--b0);stroke-width:1}
+              .ra-axis{stroke:var(--b0);stroke-width:1}
+              .ra-fill{fill:rgba(59,130,246,.15);stroke:#3b82f6;stroke-width:1.5;stroke-linejoin:round}
+              .ra-lbl{font-size:9px;fill:var(--sub);font-family:inherit;text-anchor:middle}
+              .ra-lbl-bold{font-size:9px;fill:var(--txt);font-family:inherit;font-weight:600;text-anchor:middle}
+              .ra-stat{font-size:8px;fill:var(--blue);font-family:inherit;text-anchor:middle}
+              .ra-dot{fill:#3b82f6}
+            </style>
+          </defs>
+
+          <!-- center -->
+          <!-- axes: top=Program Delivery, upper-right=Data & Reporting, lower-right=Compliance, lower-left=Team Leadership, upper-left=Process Improvement -->
+          <!-- 5 axes at 72° intervals. Start top (270°), go clockwise -->
+          <!-- cx=150, cy=145, r_max=95 -->
+
+          <!-- Grid rings at 25%, 50%, 75%, 100% -->
+          <!-- Ring polygons for 5 axes -->
+          <!-- r=23.75 (25%), r=47.5 (50%), r=71.25 (75%), r=95 (100%) -->
+          <!-- Axis angles (from top, clockwise): 270°, 342°, 54°, 126°, 198° -->
+          <!-- In radians: -π/2, -π/2+2π/5, -π/2+4π/5, -π/2+6π/5, -π/2+8π/5 -->
+          <!-- Points: (cx + r*cos(a), cy + r*sin(a)) -->
+          <!-- a0=-90°: (150, 50) -->
+          <!-- a1=-18°: (150+95*cos(-18°), 145+95*sin(-18°)) = (240.3, 115.6) -->
+          <!-- a2=54°:  (150+95*cos(54°), 145+95*sin(54°))  = (205.8, 221.9) -->
+          <!-- a3=126°: (150+95*cos(126°), 145+95*sin(126°)) = (94.2, 221.9) -->
+          <!-- a4=198°: (150+95*cos(198°), 145+95*sin(198°)) = (59.7, 115.6) -->
+
+          <!-- Axes -->
+          <line class="ra-axis" x1="150" y1="145" x2="150" y2="50"/>
+          <line class="ra-axis" x1="150" y1="145" x2="240.3" y2="115.6"/>
+          <line class="ra-axis" x1="150" y1="145" x2="205.8" y2="221.9"/>
+          <line class="ra-axis" x1="150" y1="145" x2="94.2" y2="221.9"/>
+          <line class="ra-axis" x1="150" y1="145" x2="59.7" y2="115.6"/>
+
+          <!-- Grid ring 25% -->
+          <polygon class="ra-grid" points="150,121.3 173.8,138.9 164.5,163.5 135.5,163.5 126.2,138.9"/>
+          <!-- Grid ring 50% -->
+          <polygon class="ra-grid" points="150,97.5 197.7,130.3 178.0,192.0 122.0,192.0 102.4,130.3"/>
+          <!-- Grid ring 75% -->
+          <polygon class="ra-grid" points="150,73.8 221.5,121.6 191.5,183.7 108.5,183.7 78.5,121.6"/>
+          <!-- Grid ring 100% -->
+          <polygon class="ra-grid" points="150,50 240.3,115.6 205.8,221.9 94.2,221.9 59.7,115.6"/>
+
+          <!-- Data: scores out of 95 (100%)
+               Program Delivery:    92% → r=87.4
+               Data & Reporting:    85% → r=80.75
+               Compliance:          100% → r=95
+               Team Leadership:     88% → r=83.6
+               Process Improvement: 82% → r=77.9
+          -->
+          <!-- Axis 0 (top, 270°): Program Delivery r=87.4 → (150, 145-87.4)=(150,57.6) -->
+          <!-- Axis 1 (342°): Data & Reporting r=80.75 → (150+80.75*cos(-18°),145+80.75*sin(-18°))=(226.8,120.7) -->
+          <!-- Axis 2 (54°): Compliance r=95 → (150+95*cos(54°),145+95*sin(54°))=(205.8,221.9) -->
+          <!-- Axis 3 (126°): Team Leadership r=83.6 → (150+83.6*cos(126°),145+83.6*sin(126°))=(101.0,212.7) -->
+          <!-- Axis 4 (198°): Process Improvement r=77.9 → (150+77.9*cos(198°),145+77.9*sin(198°))=(75.9,120.9) -->
+
+          <polygon class="ra-fill" points="150,57.6 226.8,120.7 205.8,221.9 101.0,212.7 75.9,120.9"/>
+
+          <!-- Dots -->
+          <circle class="ra-dot" cx="150" cy="57.6" r="3"/>
+          <circle class="ra-dot" cx="226.8" cy="120.7" r="3"/>
+          <circle class="ra-dot" cx="205.8" cy="221.9" r="3"/>
+          <circle class="ra-dot" cx="101.0" cy="212.7" r="3"/>
+          <circle class="ra-dot" cx="75.9" cy="120.9" r="3"/>
+
+          <!-- Labels -->
+          <text class="ra-lbl-bold" x="150" y="42">Program</text>
+          <text class="ra-lbl-bold" x="150" y="52">Delivery</text>
+          <text class="ra-stat" x="150" y="63">86% sat · 100% compliance</text>
+
+          <text class="ra-lbl-bold" x="258" y="110">Data &amp;</text>
+          <text class="ra-lbl-bold" x="258" y="120">Reporting</text>
+          <text class="ra-stat" x="258" y="130">87% time saved</text>
+
+          <text class="ra-lbl-bold" x="218" y="244">Compliance</text>
+          <text class="ra-stat" x="218" y="254">100% · 0 findings</text>
+
+          <text class="ra-lbl-bold" x="82" y="244">Team</text>
+          <text class="ra-lbl-bold" x="82" y="254">Leadership</text>
+          <text class="ra-stat" x="82" y="264">9+ staff · 15+ mtgs/wk</text>
+
+          <text class="ra-lbl-bold" x="38" y="110">Process</text>
+          <text class="ra-lbl-bold" x="38" y="120">Improvement</text>
+          <text class="ra-stat" x="38" y="130">+15% admissions</text>
+        </svg>
       </div>
       <div>
         <div class="sg">
           <div class="sc"><div class="sce">Analytics</div><div class="scn">Analytics &amp; Reporting</div><div class="sis">
-            <div class="si"><span class="sid" style="background:var(--blue)"></span>Power BI — Operational KPI dashboard development</div>
-            <div class="si"><span class="sid" style="background:var(--blue)"></span>Excel — Advanced reporting &amp; data modeling</div>
+            <div class="si"><span class="sid" style="background:var(--blue)"></span>Power BI — built the operational dashboard used by leadership weekly</div>
+            <div class="si"><span class="sid" style="background:var(--blue)"></span>Excel — scheduling models, compliance trackers, reporting templates</div>
             <div class="si"><span class="sid" style="background:var(--blue)"></span>KPI Development &amp; Executive Reporting</div>
           </div></div>
           <div class="sc"><div class="sce">Operations</div><div class="scn">Operations &amp; Compliance</div><div class="sis">
-            <div class="si"><span class="sid" style="background:var(--grn)"></span>Lean Six Sigma Black Belt — AIGPE Certified</div>
+            <div class="si"><span class="sid" style="background:var(--grn)"></span>Six Sigma Black Belt (AIGPE)</div>
             <div class="si"><span class="sid" style="background:var(--grn)"></span>Process Improvement — DMAIC Methodology</div>
-            <div class="si"><span class="sid" style="background:var(--grn)"></span>HIPAA &amp; Regulatory Compliance</div>
-            <div class="si"><span class="sid" style="background:var(--grn)"></span>EMR/EHR Systems &amp; Audit Readiness</div>
+            <div class="si"><span class="sid" style="background:var(--grn)"></span>Regulatory Compliance Management</div>
+            <div class="si"><span class="sid" style="background:var(--grn)"></span>Systems Management &amp; Audit Readiness (Kipu, MediTech, BlueStep)</div>
           </div></div>
           <div class="sc"><div class="sce">PM</div><div class="scn">Project Management</div><div class="sis">
             <div class="si"><span class="sid" style="background:var(--amb)"></span>Scheduling &amp; Dependency Management</div>
             <div class="si"><span class="sid" style="background:var(--amb)"></span>Risk Tracking &amp; Mitigation</div>
             <div class="si"><span class="sid" style="background:var(--amb)"></span>Cross-functional Team Leadership (9+)</div>
-            <div class="si"><span class="sid" style="background:var(--amb)"></span>Stakeholder Communication</div>
+            <div class="si"><span class="sid" style="background:var(--amb)"></span>Status Reporting &amp; Timeline Management</div>
+          </div></div>
+          <div class="sc"><div class="sce">Tools</div><div class="scn">PM &amp; Collaboration Tools</div><div class="sis">
+            <div class="si"><span class="sid" style="background:var(--pur)"></span>Monday.com — how I track projects and keep teams on the same page</div>
+            <div class="si"><span class="sid" style="background:var(--pur)"></span>Microsoft Teams — daily coordination across clinical and admin teams</div>
+            <div class="si"><span class="sid" style="background:var(--pur)"></span>Google Workspace — documentation, reporting, and collaboration across sites</div>
+            
+            
+          </div></div>
+          <div class="sc"><div class="sce">Leadership</div><div class="scn">Leadership &amp; Communication</div><div class="sis">
+            <div class="si"><span class="sid" style="background:var(--grn)"></span>Staff Onboarding &amp; Training Program Design</div>
+            <div class="si"><span class="sid" style="background:var(--grn)"></span>Change Management &amp; Workflow Transition</div>
+            <div class="si"><span class="sid" style="background:var(--grn)"></span>Performance Feedback &amp; Documented Staff Supervision</div>
+            <div class="si"><span class="sid" style="background:var(--grn)"></span>Multi-stakeholder Communication &amp; External Coordination</div>
+          </div></div>
+          <div class="sc"><div class="sce">Hiring</div><div class="scn">Hiring &amp; Onboarding</div><div class="sis">
+            <div class="si"><span class="sid" style="background:var(--blue)"></span>Staff Recruitment &amp; Interview Coordination</div>
+            <div class="si"><span class="sid" style="background:var(--blue)"></span>Onboarding Design &amp; Training Delivery</div>
+            <div class="si"><span class="sid" style="background:var(--blue)"></span>Compliance Documentation for New Hire Onboarding</div>
+            <div class="si"><span class="sid" style="background:var(--blue)"></span>Candidate Communication &amp; Hiring Coordination</div>
           </div></div>
         </div>
       </div>
@@ -1072,13 +1427,12 @@ footer{border-top:1px solid var(--b0);padding:22px 0}
 <!-- EDUCATION -->
 <section id="education">
   <div class="wrap">
-    <div class="f"><span class="lbl">Education &amp; Certifications</span><div class="rule"></div></div>
-    <div class="edu f"><div><div class="edud">Bachelor of Science, Recreational Therapy</div><div class="edus">Minor: Psychology &amp; Communications · Nova Southeastern University</div></div><div class="eduy">2021</div></div>
+    <div class="f"><span class="lbl">Education &amp; Certifications</span><h2>Education and credentials.</h2><div class="rule"></div></div>
+    <div class="edu f"><div><div class="edud">Bachelor of Science, Recreational Therapy</div><div class="edus">Minor: Psychology &amp; Communications · Nova Southeastern University · Hired directly out of school as Lead Therapist at Tampa Community Hospital</div></div><div class="eduy">2021</div></div>
     <div class="certg f">
-      <div class="certc"><div class="certe">Certification</div><div class="certn">Six Sigma Black Belt</div><div class="certi">AIGPE — American Institute for Global Professional Education</div></div>
-      <div class="certc"><div class="certe">Certification</div><div class="certn">Certified Lean Specialist</div><div class="certi">AIGPE — American Institute for Global Professional Education</div></div>
-      <div class="certc"><div class="certe">Certification</div><div class="certn">Project Schedule: Monitor &amp; Control Specialist</div><div class="certi">AIGPE — American Institute for Global Professional Education</div></div>
-      <div class="certc"><div class="certe">Certification</div><div class="certn">Certified Recreational Therapist</div><div class="certi">NCTRC — National Council for Therapeutic Recreation Certification</div></div>
+      <div class="certc"><div class="certe">In Progress</div><div class="certn">Project Management Professional (PMP)</div><div class="certi">PMI — Project Management Institute · Estimated completion Q4 2026</div></div>
+      <div class="certc"><div class="certe">Certification</div><div class="certn">Six Sigma Black Belt · Lean Specialist · Project Schedule Specialist</div><div class="certi">AIGPE — American Institute for Global Professional Education</div></div>
+      <div class="certc"><div class="certe">Clinical Credential</div><div class="certn">Certified Recreational Therapist (NCTRC)</div><div class="certi">National Council for Therapeutic Recreation Certification — clinical credential; translates to structured program design and outcome tracking in any setting</div></div>
     </div>
   </div>
 </section>
@@ -1086,52 +1440,54 @@ footer{border-top:1px solid var(--b0);padding:22px 0}
 <!-- CONTACT -->
 <section id="contact">
   <div class="wrap">
-    <div class="ctg">
-      <div class="f">
-        <span class="lbl">Let's Connect</span><div class="rule"></div>
-        <div class="cth">Interested in healthcare operations, PMO coordination, process improvement, or analytics?</div>
-        <p class="ctp">Immediately available for full-time roles. Effective in structured PMO teams and equally comfortable building programs from scratch.</p>
-        <!-- CONTACT FORM — replace YOUR_FORM_ID after signing up free at formspree.io -->
-        <form class="cf" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" onsubmit="handleSubmit(event)">
-          <div class="cf-row">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Email Address" required>
+    <div class="f"><span class="lbl">Let's Connect</span><h2>Get in touch.</h2><div class="rule"></div></div>
+    <div class="contact-grid f">
+
+      <div style="display:flex;flex-direction:column;gap:10px">
+        <a href="tel:7206333302" class="contact-card">
+          <div class="contact-card-icon">
+            <svg viewBox="0 0 16 16" fill="none" stroke="#3b82f6" stroke-width="1.5" stroke-linecap="round" style="width:15px;height:15px"><path d="M3 2h3l1.5 3.5-2 1.5a10 10 0 004.5 4.5l1.5-2L15 11v3a1 1 0 01-1 1C6.2 15 1 9.8 1 3a1 1 0 011-1z"/></svg>
           </div>
-          <input type="text" name="subject" placeholder="Subject or Role You're Hiring For">
-          <textarea name="message" placeholder="Tell me about the role or opportunity..." required></textarea>
-          <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap">
-            <button type="submit" class="cf-submit">
-              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" style="width:13px;height:13px"><path d="M14 2L2 8l4 2 2 4 6-12z"/></svg>
-              Send Message
-            </button>
-            <div id="cf-status" style="font-size:.76rem;color:var(--grn);display:none">✓ Message sent — I'll be in touch soon.</div>
+          <div><div class="contact-card-label">Phone</div><div class="contact-card-value">(720) 633-3302</div></div>
+        </a>
+        <a href="mailto:kayleegassen@gmail.com" class="contact-card">
+          <div class="contact-card-icon">
+            <svg viewBox="0 0 16 16" fill="none" stroke="#3b82f6" stroke-width="1.5" stroke-linecap="round" style="width:15px;height:15px"><rect x="1" y="3" width="14" height="10" rx="1"/><path d="M1 4l7 5 7-5"/></svg>
           </div>
-          <p class="cf-note">Or email directly: <a href="mailto:kayleegassen@gmail.com" style="color:var(--blue)">kayleegassen@gmail.com</a></p>
-        </form>
-        <div style="margin-top:18px">
-          <div class="clinks">
-            <div class="clr"><span class="clk">LinkedIn</span><span class="clv"><a href="https://linkedin.com/in/kaylee-gassen-999464160" target="_blank" rel="noopener">linkedin.com/in/kaylee-gassen-999464160</a></span></div>
-            <div class="clr"><span class="clk">Location</span><span class="clv">Denver, CO · Remote &amp; Hybrid OK</span></div>
-            <div class="clr"><span class="clk">Status</span><span class="clv g">Actively seeking mid-level to senior PM roles</span></div>
+          <div><div class="contact-card-label">Email</div><div class="contact-card-value">kayleegassen@gmail.com</div></div>
+        </a>
+        <a href="https://linkedin.com/in/kaylee-gassen" target="_blank" rel="noopener noreferrer" class="contact-card">
+          <div class="contact-card-icon">
+            <svg viewBox="0 0 16 16" fill="#3b82f6" style="width:15px;height:15px"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 01.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/></svg>
           </div>
-          <a href="Kaylee_Gassen_Resume.pdf" download class="btn btn-grn" style="margin-top:10px"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M8 2v8M5 7l3 3 3-3M2 13h12"/></svg>Download Resume (PDF)</a>
+          <div><div class="contact-card-label">LinkedIn</div><div class="contact-card-value">View LinkedIn Profile ↗</div></div>
+        </a>
+      </div>
+
+      <div style="background:var(--bg1);border:1px solid var(--b0);border-radius:var(--r);padding:24px;display:flex;flex-direction:column;justify-content:space-between">
+        <div>
+          <div style="font-size:.62rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--grn);margin-bottom:10px">● Open to opportunities · Available within 2 weeks</div>
+          
+          <div style="background:var(--bg1);border-left:3px solid var(--blue);border-radius:0 var(--r) var(--r) 0;padding:14px 16px;margin-bottom:18px">
+            <p style="font-size:.8rem;color:var(--txt);line-height:1.7;font-style:italic;margin-bottom:8px">&ldquo;Kaylee functioned as many parts of a whole. Without the official title, she managed the program end to end &mdash; built and ran the rec therapy track, recruited and trained the team, developed the curriculum, and handled the budget. Clients looked forward to her programming. We saw a meaningful increase in 30-day retention and new admissions that we attributed directly to what she built.&rdquo;</p>
+            <p style="font-size:.72rem;color:var(--sub);font-weight:500">— Dianne S., Supervisor · Mountain Springs Recovery</p>
+          </div>
+          <p style="font-size:.82rem;color:var(--sub);line-height:1.75;margin-bottom:20px">I work best in environments where something is being built or fixed — where the structure isn't fully there yet and someone needs to own it. If that sounds like what you're working on, reach out.</p>
+        </div>
+        <div style="display:flex;gap:8px;flex-wrap:wrap">
+          <a href="Kaylee_Gassen_Resume.pdf" download class="btn btn-grn">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" style="width:13px;height:13px"><path d="M8 2v8M5 7l3 3 3-3M2 13h12"/></svg>
+            Download Resume
+          </a>
+          <a href="https://linkedin.com/in/kaylee-gassen" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">LinkedIn ↗</a>
         </div>
       </div>
-      <div class="f">
-        <div class="ob">
-          <div class="obt"><div class="obs">Actively seeking new opportunities</div><h3>Available immediately for the right role</h3><p>5+ years healthcare program operations. Six Sigma Black Belt. Zero compliance findings. Client satisfaction improved 47%→78%. Budget managed. Two testimonials. Built analytics dashboards, DMAIC case study, and PM tools — all live on this page.</p></div>
-          <div class="obr"><span class="obrp">Program Manager</span><span class="obrp">Project Manager</span><span class="obrp">Healthcare Operations</span><span class="obrp">PMO Analyst</span><span class="obrp">Operations Manager</span></div>
-          <div class="obc">
-            <a href="mailto:kayleegassen@gmail.com" class="btn btn-blue">Get in Touch</a>
-            <a href="Kaylee_Gassen_Resume.pdf" download class="btn btn-grn"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M8 2v8M5 7l3 3 3-3M2 13h12"/></svg>Resume PDF</a>
-          </div>
-        </div>
-      </div>
+
     </div>
   </div>
 </section>
 
-<footer><div class="wrap"><div class="fi"><span class="fn">Kaylee Gassen — Program Manager · Healthcare Operations</span><span class="fd">Denver, CO · kayleegassen@gmail.com</span></div></div></footer>
+<footer><div class="wrap"><div class="fi"><span class="fn">Kaylee Gassen · Program Manager</span><span class="fd">Denver, CO · (720) 633-3302 · kayleegassen@gmail.com · © 2026</span></div></div></footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
 <script>
@@ -1141,6 +1497,7 @@ function switchTab(name) {
   document.querySelectorAll('.ttab').forEach(b=>b.classList.remove('active'));
   document.getElementById('tab-'+name).classList.add('active');
   document.querySelector(`[data-tab="${name}"]`).classList.add('active');
+  if(name==='dash')setTimeout(initCharts,50);
 }
 /* ── DMAIC ── */
 const phC={D:'#3b82f6',M:'#059669',A:'#7c3aed',I:'#d97706',C:'#0891b2'};
@@ -1175,31 +1532,25 @@ function initCharts() {
   const ic=document.getElementById('chartImpact');
   if(ic)new Chart(ic,{type:'line',data:{labels:['Baseline','Month 1','Month 2','Month 3','Month 4','Month 5','Month 6','Month 7','Month 8','Current'],datasets:[
     {label:'Before Rec Track',data:[47,47,47,47,47,47,47,47,47,47],borderColor:'rgba(239,68,68,.4)',borderWidth:1.5,borderDash:[4,3],pointRadius:0,tension:0,fill:false},
-    {label:'After Rec Track Created',data:[null,null,null,49,54,59,65,70,74,78],borderColor:'#10b981',backgroundColor:'rgba(16,185,129,.08)',borderWidth:2.5,pointRadius:3,pointBackgroundColor:'#10b981',fill:true,tension:0.4}
+    {label:'After Rec Track Created',data:[null,null,null,49,55,62,68,74,80,86],borderColor:'#10b981',backgroundColor:'rgba(16,185,129,.08)',borderWidth:2.5,pointRadius:3,pointBackgroundColor:'#10b981',fill:true,tension:0.4}
   ]},options:{...base,scales:{x:{ticks:{color:T,font:{size:9}},grid:{color:G},border:{color:G}},y:{min:30,max:100,ticks:{color:T,font:{size:9},callback:v=>v+'%'},grid:{color:G},border:{color:G}}},plugins:{legend:{display:true,position:'bottom',labels:{color:T,font:{size:9},padding:10,boxWidth:10}}}}});
-  /* Radar */
-  const rc=document.getElementById('cRadar');
-  if(rc)new Chart(rc,{type:'radar',data:{
-    labels:['Analytics &\nReporting','Process\nImprovement','Compliance\nManagement','Scheduling\n& Operations','Stakeholder\nComms','Team\nLeadership'],
-    datasets:[{label:'Kaylee Gassen',data:[82,90,95,87,88,85],backgroundColor:'rgba(59,130,246,.15)',borderColor:'#3b82f6',borderWidth:2,pointBackgroundColor:'#3b82f6',pointBorderColor:'#060d18',pointRadius:5}]
-  },options:{responsive:true,maintainAspectRatio:false,animation:{duration:800},scales:{r:{beginAtZero:true,max:100,ticks:{stepSize:20,color:'#3d5270',font:{size:8},backdropColor:'transparent'},grid:{color:'rgba(255,255,255,.06)'},angleLines:{color:'rgba(255,255,255,.06)'},pointLabels:{color:'#8aa4c0',font:{size:10}}}},plugins:{legend:{display:false}}}});
 }
 window.addEventListener('load',initCharts);
 
 /* ── NOTES FORMATTER ── */
 const NF_DEMO=`Meeting: Weekly Team Check-in\nDate: ${new Date().toLocaleDateString('en-US',{month:'long',day:'numeric',year:'numeric'})}\nAttendees: Kaylee Gassen, Sarah Johnson, Dr. Lisa Chen, Mike Torres, Amanda Rivera\n\nWe reviewed the upcoming accreditation survey scheduled for next month. Dr. Chen will finalize the compliance documentation packet by Friday. Sarah needs to update all EMR records for active cases before Thursday. Mike agreed to coordinate with external providers about the updated protocol by next Monday.\n\nThe team decided to move the weekly meeting from Tuesday to Wednesday. Kaylee will send updated calendar invites to all staff by end of day. Amanda should prepare the new intake checklist and circulate for team feedback by Thursday.\n\nMike will submit the vehicle maintenance request this week. The team approved moving forward with the new documentation workflow.`;
 function loadNFDemo(){document.getElementById('nf-notes').value=NF_DEMO;document.getElementById('nf-type').value='Weekly Team Meeting';}
-function clearNF(){document.getElementById('nf-notes').value='';document.getElementById('nf-type').value='';document.getElementById('nf-out').innerHTML='<div class="nf-ph"><span style="font-size:2rem">📋</span>Paste notes and click<br><strong style="color:var(--txt)">Format Notes</strong></div>';document.getElementById('nf-copy-btn').style.display='none';}
+function clearNF(){document.getElementById('nf-notes').value='';document.getElementById('nf-type').value='';document.getElementById('nf-out').innerHTML='<div class="nf-ph">Paste notes and click<br><strong style="color:var(--txt)">Format Notes</strong></div>';document.getElementById('nf-copy-btn').style.display='none';}
 function eO(s){const p=[/^(Dr\.\s+[A-Z][a-z]+)/,/^([A-Z][a-z]+\s+[A-Z][a-z]+)\s+(will|needs to|agreed to)/,/^([A-Z][a-z]+)\s+(will|needs to|agreed to|should)/];for(const r of p){const m=s.match(r);if(m)return m[1].trim();}return null;}
 function eD(s){const p=[/by\s+(Friday|Monday|Tuesday|Wednesday|Thursday)/i,/by\s+(end of day|EOD)/i,/before\s+(Thursday|Friday|Monday)/i,/next\s+(Monday|week)/i,/this\s+week/i];for(const r of p){const m=s.match(r);if(m)return m[0].replace(/^by\s+/i,'').replace(/^before\s+/i,'');}return'TBD';}
 function gP(s){const l=s.toLowerCase();if(l.includes('urgent')||l.includes('asap'))return['High','chip-h'];if(l.includes('when possible'))return['Low','chip-l'];return['Medium','chip-m'];}
 function formatNotes(){const notes=document.getElementById('nf-notes').value.trim();if(!notes){alert('Paste some notes first, or click "Load Example".');return;}const out=document.getElementById('nf-out');out.innerHTML='<div class="proc"><div class="spinner"></div><span>Formatting your notes...</span></div>';document.getElementById('nf-copy-btn').style.display='none';setTimeout(()=>{renderNF(parseNF(notes));document.getElementById('nf-copy-btn').style.display='inline-block';},900);}
 function parseNF(text){const tM=text.match(/(?:Meeting|Subject):?\s*([^\n]+)/i);const dM=text.match(/[Dd]ate:?\s*([^\n]+)/);const aM=text.match(/[Aa]ttendees?:?\s*([^\n]+)/);const title=tM?tM[1].trim():'Meeting Notes';const date=dM?dM[1].trim():new Date().toLocaleDateString();const attendees=aM?aM[1].split(/[,&]/).map(s=>s.trim()).filter(Boolean):[];const sentences=text.replace(/\n+/g,' ').split(/(?<=[.!?])\s+/).map(s=>s.trim()).filter(s=>s.length>15);const aV=['will','needs to','agreed to','should','to send','to update','to prepare','to finalize','to coordinate','to submit','to confirm'];const dW=['decided','approved','resolved','confirmed','team approved','moving forward'];const actions=[],decisions=[];sentences.forEach(s=>{if(s.match(/^(Meeting|Date|Attendees)/i))return;const l=s.toLowerCase();if(dW.some(d=>l.includes(d)))decisions.push(s);else if(aV.some(v=>l.includes(v))&&s.length>20)actions.push({text:s,owner:eO(s)||'Team',due:eD(s),priority:gP(s)});});window._nfText=`MEETING: ${title}\nDATE: ${date}\n${attendees.length?'ATTENDEES: '+attendees.join(', ')+'\n':''}\nACTION ITEMS (${actions.length}):\n${actions.map((a,i)=>`${i+1}. ${a.text}\n   Owner: ${a.owner} | Due: ${a.due} | Priority: ${a.priority[0]}`).join('\n')}${decisions.length?'\n\nDECISIONS:\n'+decisions.map((d,i)=>`${i+1}. ${d}`).join('\n'):''}`;return{title,date,attendees,actions,decisions};}
-function renderNF(r){let h=`<div class="nf-hdr"><div style="font-size:.88rem;font-weight:500;color:var(--txt);margin-bottom:3px">${r.title}</div><div style="font-size:.76rem;color:var(--dim)">${r.date}</div></div>`;if(r.attendees.length){h+=`<div class="nf-sec"><div class="nf-sch">Attendees (${r.attendees.length})</div>${r.attendees.map(a=>`<span class="nf-att">${a}</span>`).join('')}</div>`;}if(r.actions.length){h+=`<div class="nf-sec"><div class="nf-sch">Action Items (${r.actions.length})</div>`;r.actions.forEach(a=>{h+=`<div class="nf-item"><div class="nf-item-t">${a.text}</div><div class="nf-chips"><span class="chip chip-o">👤 ${a.owner}</span><span class="chip chip-d">📅 ${a.due}</span><span class="chip ${a.priority[1]}">${a.priority[0]}</span></div></div>`;});h+='</div>';}if(r.decisions.length){h+=`<div class="nf-sec"><div class="nf-sch">Decisions Made (${r.decisions.length})</div>${r.decisions.map(d=>`<div class="nf-dec">✓ ${d}</div>`).join('')}</div>`;}if(!r.actions.length&&!r.decisions.length)h+=`<div class="nf-item"><div class="nf-item-t">Notes processed. For better results: include names + "will / needs to / agreed to" for actions, and "decided / approved / confirmed" for decisions.</div></div>`;document.getElementById('nf-out').innerHTML=h;}
+function renderNF(r){let h=`<div class="nf-hdr"><div style="font-size:.88rem;font-weight:500;color:var(--txt);margin-bottom:3px">${r.title}</div><div style="font-size:.76rem;color:var(--dim)">${r.date}</div></div>`;if(r.attendees.length){h+=`<div class="nf-sec"><div class="nf-sch">Attendees (${r.attendees.length})</div>${r.attendees.map(a=>`<span class="nf-att">${a}</span>`).join('')}</div>`;}if(r.actions.length){h+=`<div class="nf-sec"><div class="nf-sch">Action Items (${r.actions.length})</div>`;r.actions.forEach(a=>{h+=`<div class="nf-item"><div class="nf-item-t">${a.text}</div><div class="nf-chips"><span class="chip chip-o">${a.owner}</span><span class="chip chip-d">${a.due}</span><span class="chip ${a.priority[1]}">${a.priority[0]}</span></div></div>`;});h+='</div>';}if(r.decisions.length){h+=`<div class="nf-sec"><div class="nf-sch">Decisions Made (${r.decisions.length})</div>${r.decisions.map(d=>`<div class="nf-dec">✓ ${d}</div>`).join('')}</div>`;}if(!r.actions.length&&!r.decisions.length)h+=`<div class="nf-item"><div class="nf-item-t">Notes processed. For better results: include names + "will / needs to / agreed to" for actions, and "decided / approved / confirmed" for decisions.</div></div>`;document.getElementById('nf-out').innerHTML=h;}
 function copyNFOut(){if(!window._nfText)return;navigator.clipboard.writeText(window._nfText).then(()=>{const b=document.getElementById('nf-copy-btn');b.textContent='Copied!';setTimeout(()=>b.textContent='Copy All',2000);});}
 
 /* ── TEMPLATE SUB-TABS ── */
-function switchTmpl(name){document.querySelectorAll('.tmpl-panel').forEach(p=>p.classList.remove('active'));document.querySelectorAll('.tmpl-tab').forEach(b=>b.classList.remove('active'));document.getElementById('tmpl-'+name).classList.add('active');event.currentTarget.classList.add('active');}
+function switchTmpl(name,el){document.querySelectorAll('.tmpl-panel').forEach(p=>p.classList.remove('active'));document.querySelectorAll('.tmpl-tab').forEach(b=>b.classList.remove('active'));document.getElementById('tmpl-'+name).classList.add('active');el.classList.add('active');}
 
 /* ── RISK SCORE ── */
 function calcScore(cell){const row=cell.closest('tr');const tds=[...row.querySelectorAll('td')];if(tds.length<7)return;const lv=parseInt(tds[3].textContent)||0;const iv=parseInt(tds[4].textContent)||0;const score=lv*iv;tds[5].textContent=score||'—';tds[5].className='sh-score '+(score>=10?'sc-high':score>=5?'sc-med':score>0?'sc-low':'');if(score>=10){tds[6].className='risk-H';tds[6].textContent='HIGH';}else if(score>=5){tds[6].className='risk-M';tds[6].textContent='MEDIUM';}else if(score>0){tds[6].className='risk-L';tds[6].textContent='LOW';}else{tds[6].className='shv';tds[6].textContent='';}}
@@ -1207,10 +1558,163 @@ function calcScore(cell){const row=cell.closest('tr');const tds=[...row.querySel
 /* ── PRINT ── */
 function printTmpl(id,title){const el=document.getElementById('sheet-'+id);if(!el)return;const w=window.open('','_blank','width=900,height=700');w.document.write(`<!DOCTYPE html><html><head><title>${title} — Kaylee Gassen</title><style>body{font-family:'Segoe UI',sans-serif;font-size:11px;color:#1e293b;padding:20px;background:#fff}table{width:100%;border-collapse:collapse}th{background:#1e3a5f;color:#fff;font-size:10px;font-weight:600;padding:7px 10px;text-align:left;border:1px solid #254570;letter-spacing:.06em;text-transform:uppercase}td{border:1px solid #e2e8f0;padding:0;vertical-align:top}.shl{background:#f1f5f9;color:#475569;font-size:10px;font-weight:500;padding:7px 10px;white-space:nowrap}.shv{padding:7px 10px;color:#1e293b;min-height:28px;line-height:1.5}.sh-section{background:#254570;color:#93c5fd;font-size:9px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;padding:6px 10px}.sh-R{background:#dbeafe;color:#1d4ed8;font-weight:700;text-align:center;padding:7px}.sh-A{background:#ede9fe;color:#6d28d9;font-weight:700;text-align:center;padding:7px}.sh-C{background:#d1fae5;color:#065f46;font-weight:700;text-align:center;padding:7px}.sh-I{background:#fef3c7;color:#92400e;font-weight:700;text-align:center;padding:7px}.sh-center{text-align:center;padding:7px}.risk-H{background:#fee2e2;color:#b91c1c;font-weight:700;text-align:center;padding:7px}.risk-M{background:#fef3c7;color:#b45309;font-weight:700;text-align:center;padding:7px}.risk-L{background:#d1fae5;color:#065f46;font-weight:700;text-align:center;padding:7px}.sh-score{font-weight:700;text-align:center;padding:7px}.sc-high{color:#b91c1c}.sc-med{color:#b45309}.sc-low{color:#065f46}.kpi-cat{background:#e2e8f0;color:#1e293b;font-weight:600;padding:7px 10px}.kpi-on{background:#d1fae5;color:#065f46;font-weight:600;text-align:center;padding:7px}.kpi-warn{background:#fef3c7;color:#92400e;font-weight:600;text-align:center;padding:7px}.phase-hdr{color:#fff;font-weight:600;padding:8px 10px}h1{font-size:16px;color:#1e3a5f;margin-bottom:4px}.sub{font-size:10px;color:#64748b;margin-bottom:16px}</style></head><body><h1>${title}</h1><div class="sub">Kaylee Gassen · Program Manager · kayleegassen@gmail.com · Denver, CO</div>${el.innerHTML}<script>window.onload=function(){window.print()}<\/script></body></html>`);w.document.close();}
 
-/* ── CONTACT FORM ── */
-function handleSubmit(e){e.preventDefault();const form=e.target;const data=new FormData(form);fetch(form.action,{method:'POST',body:data,headers:{'Accept':'application/json'}}).then(r=>{if(r.ok){form.reset();document.getElementById('cf-status').style.display='block';setTimeout(()=>document.getElementById('cf-status').style.display='none',5000);}else{alert('Something went wrong. Please email kayleegassen@gmail.com directly.');}}).catch(()=>{alert('Something went wrong. Please email kayleegassen@gmail.com directly.');});}
+/* ── STAFF TRAINING & SUPERVISION TRACKER ── */
+const MODULES = [
+  'Program Orientation','Safety & Crisis Protocols','Documentation Standards',
+  'Group Facilitation','Session Planning','EMR / EHR Basics','Clinical Guidelines Review','Competency Sign-Off'
+];
+let staffRoster = [];
 
-/* ── SCROLL FADE ── */
+function addStaffMember(){
+  const name = document.getElementById('sf-name').value.trim();
+  const role = document.getElementById('sf-role').value.trim();
+  const start = document.getElementById('sf-start').value;
+  if(!name) return;
+  const member = {
+    id: Date.now(), name, role: role||'Staff', start: start||new Date().toISOString().split('T')[0],
+    modules: MODULES.reduce((a,m)=>({...a,[m]:{done:false,date:''}}),{}),
+    supervisions: []
+  };
+  staffRoster.push(member);
+  document.getElementById('sf-name').value='';
+  document.getElementById('sf-role').value='';
+  document.getElementById('sf-start').value='';
+  renderRoster();
+}
+
+function toggleModule(id, mod){
+  const m = staffRoster.find(s=>s.id===id);
+  if(!m) return;
+  m.modules[mod].done = !m.modules[mod].done;
+  m.modules[mod].date = m.modules[mod].done ? new Date().toLocaleDateString() : '';
+  renderRoster();
+}
+
+function addSupervision(id){
+  const m = staffRoster.find(s=>s.id===id);
+  const noteEl = document.getElementById('sup-note-'+id);
+  const dateEl = document.getElementById('sup-date-'+id);
+  if(!m||!noteEl) return;
+  const note = noteEl.value.trim();
+  if(!note) return;
+  m.supervisions.push({
+    date: dateEl.value || new Date().toLocaleDateString(),
+    note,
+    id: Date.now()
+  });
+  noteEl.value='';
+  renderRoster();
+}
+
+function removeStaff(id){
+  staffRoster = staffRoster.filter(s=>s.id!==id);
+  renderRoster();
+}
+
+function getProgress(member){
+  const done = Object.values(member.modules).filter(m=>m.done).length;
+  return { done, total: MODULES.length, pct: Math.round(done/MODULES.length*100) };
+}
+
+function renderRoster(){
+  const roster = document.getElementById('sf-roster');
+  const empty  = document.getElementById('sf-empty');
+  const total  = staffRoster.length;
+  const trained = staffRoster.filter(s=>getProgress(s).pct===100).length;
+  const inProg  = staffRoster.filter(s=>{ const p=getProgress(s); return p.pct>0&&p.pct<100; }).length;
+  const sups    = staffRoster.reduce((a,s)=>a+s.supervisions.filter(sv=>{
+    const d=new Date(sv.date); const now=new Date();
+    return d.getMonth()===now.getMonth()&&d.getFullYear()===now.getFullYear();
+  }).length, 0);
+
+  document.getElementById('sf-total').textContent = total;
+  document.getElementById('sf-trained').textContent = trained;
+  document.getElementById('sf-progress').textContent = inProg;
+  document.getElementById('sf-sups').textContent = sups;
+  empty.style.display = total===0 ? 'block' : 'none';
+
+  roster.innerHTML = staffRoster.map(member => {
+    const prog = getProgress(member);
+    const barColor = prog.pct===100?'var(--grn)':prog.pct>0?'var(--amb)':'var(--b0)';
+    const statusLabel = prog.pct===100?'<span style="color:var(--grn);font-size:.65rem;font-weight:600">✓ COMPLETE</span>':
+      prog.pct>0?`<span style="color:var(--amb);font-size:.65rem;font-weight:600">${prog.done}/${prog.total} MODULES</span>`:
+      `<span style="color:var(--dim);font-size:.65rem">NOT STARTED</span>`;
+
+    const moduleHTML = MODULES.map(mod => {
+      const done = member.modules[mod].done;
+      const dateStr = member.modules[mod].date;
+      return `<div onclick="toggleModule(${member.id},'${mod}')" style="display:flex;align-items:center;gap:8px;padding:7px 10px;border-radius:4px;cursor:pointer;background:${done?'var(--ggl)':'var(--bg2)'};border:1px solid ${done?'rgba(16,185,129,.25)':'var(--b0)'};transition:background .15s">
+        <div style="width:14px;height:14px;border-radius:3px;border:1.5px solid ${done?'var(--grn)':'var(--dim)'};background:${done?'var(--grn)':'transparent'};display:flex;align-items:center;justify-content:center;flex-shrink:0">
+          ${done?'<svg viewBox="0 0 10 10" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round"><path d="M2 5l2 2 4-4"/></svg>':''}
+        </div>
+        <span style="font-size:.75rem;color:${done?'var(--grn)':'var(--sub)'};flex:1">${mod}</span>
+        ${dateStr?`<span style="font-size:.62rem;color:var(--dim)">${dateStr}</span>`:''}
+      </div>`;
+    }).join('');
+
+    const supHTML = member.supervisions.length>0 ? member.supervisions.slice().reverse().map(sv=>
+      `<div style="padding:8px 12px;background:var(--bg2);border-radius:4px;border-left:2px solid var(--blue)">
+        <div style="font-size:.62rem;color:var(--dim);margin-bottom:2px">${sv.date}</div>
+        <div style="font-size:.78rem;color:var(--txt)">${sv.note}</div>
+      </div>`).join('') : `<div style="font-size:.75rem;color:var(--dim);padding:10px 0">No supervision sessions logged yet.</div>`;
+
+    return `<div style="background:var(--bg0);border:1px solid var(--b0);border-radius:var(--r);overflow:hidden">
+      <div style="padding:14px 18px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;border-bottom:1px solid var(--b0)">
+        <div>
+          <div style="font-size:.9rem;font-weight:600">${member.name}</div>
+          <div style="font-size:.72rem;color:var(--sub)">${member.role} · Started ${member.start}</div>
+        </div>
+        <div style="display:flex;align-items:center;gap:10px">
+          ${statusLabel}
+          <div style="width:80px;height:5px;background:var(--b0);border-radius:3px;overflow:hidden">
+            <div style="height:100%;width:${prog.pct}%;background:${barColor};border-radius:3px;transition:width .3s"></div>
+          </div>
+          <button onclick="removeStaff(${member.id})" style="background:none;border:none;color:var(--dim);cursor:pointer;font-size:.75rem;padding:2px 6px" title="Remove">✕</button>
+        </div>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:0">
+        <div style="padding:14px 18px;border-right:1px solid var(--b0)">
+          <div style="font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:var(--blue);font-weight:500;margin-bottom:10px">Training Modules</div>
+          <div style="display:flex;flex-direction:column;gap:5px">${moduleHTML}</div>
+        </div>
+        <div style="padding:14px 18px">
+          <div style="font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:var(--blue);font-weight:500;margin-bottom:10px">Supervision Log</div>
+          <div style="display:flex;flex-direction:column;gap:6px;margin-bottom:10px">${supHTML}</div>
+          <div style="display:flex;gap:6px;flex-direction:column">
+            <input type="date" id="sup-date-${member.id}" class="sf-date">
+            <textarea id="sup-note-${member.id}" rows="2" placeholder="Supervision notes — topics covered, feedback given, follow-ups..." class="sf-textarea" style="height:58px"></textarea>
+            <button onclick="addSupervision(${member.id})" class="btn btn-blue" style="font-size:.75rem;padding:6px 14px;justify-content:center">+ Log Supervision</button>
+          </div>
+        </div>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+function exportStaffPDF(){
+  if(staffRoster.length===0){alert('Add at least one staff member before exporting.');return;}
+  const rows = staffRoster.map(m=>{
+    const prog=getProgress(m);
+    const mods=MODULES.map(mod=>`<tr><td style="padding:4px 8px;border:1px solid #ddd;font-size:11px">${mod}</td><td style="padding:4px 8px;border:1px solid #ddd;text-align:center;font-size:11px;color:${m.modules[mod].done?'#059669':'#aaa'}">${m.modules[mod].done?'✓ '+m.modules[mod].date:'—'}</td></tr>`).join('');
+    const sups=m.supervisions.length>0?m.supervisions.map(s=>`<tr><td style="padding:4px 8px;border:1px solid #ddd;font-size:11px">${s.date}</td><td style="padding:4px 8px;border:1px solid #ddd;font-size:11px">${s.note}</td></tr>`).join(''):`<tr><td colspan="2" style="padding:4px 8px;font-size:11px;color:#aaa">No sessions logged</td></tr>`;
+    return `<div style="page-break-inside:avoid;margin-bottom:32px">
+      <h3 style="margin:0 0 4px;font-size:14px">${m.name} — ${m.role}</h3>
+      <div style="font-size:11px;color:#666;margin-bottom:10px">Started: ${m.start} · Training: ${prog.done}/${prog.total} modules (${prog.pct}%)</div>
+      <table style="width:100%;border-collapse:collapse;margin-bottom:12px"><thead><tr><th style="padding:5px 8px;background:#f3f4f6;text-align:left;font-size:11px;border:1px solid #ddd">Module</th><th style="padding:5px 8px;background:#f3f4f6;text-align:center;font-size:11px;border:1px solid #ddd">Status</th></tr></thead><tbody>${mods}</tbody></table>
+      <div style="font-size:11px;font-weight:600;margin-bottom:6px">Supervision Log</div>
+      <table style="width:100%;border-collapse:collapse"><thead><tr><th style="padding:5px 8px;background:#f3f4f6;text-align:left;font-size:11px;border:1px solid #ddd;width:120px">Date</th><th style="padding:5px 8px;background:#f3f4f6;text-align:left;font-size:11px;border:1px solid #ddd">Notes</th></tr></thead><tbody>${sups}</tbody></table>
+    </div>`;
+  }).join('<hr style="margin:24px 0">');
+  const w=window.open('','_blank');
+  w.document.write(`<!DOCTYPE html><html><head><title>Staff Training Report</title><style>body{font-family:-apple-system,sans-serif;max-width:900px;margin:40px auto;padding:0 20px;color:#111}h1{font-size:18px;margin-bottom:4px}@media print{.no-print{display:none}}</style></head><body>
+    <div class="no-print" style="margin-bottom:20px"><button onclick="window.print()" style="padding:8px 18px;background:#3b82f6;color:#fff;border:none;border-radius:6px;cursor:pointer;font-size:13px">Print / Save as PDF</button></div>
+    <h1>Staff Training &amp; Supervision Report</h1>
+    <p style="font-size:11px;color:#666;margin-bottom:24px">Generated ${new Date().toLocaleDateString()} · ${staffRoster.length} staff member${staffRoster.length!==1?'s':''} · Kaylee Gassen, Program Manager</p>
+    ${rows}</body></html>`);
+  w.document.close();
+}
+
+
 const obs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');obs.unobserve(e.target)}});},{threshold:.06,rootMargin:'0px 0px -20px 0px'});
 document.querySelectorAll('.f').forEach(el=>obs.observe(el));
 </script>
